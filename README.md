@@ -10,4 +10,6 @@ Blog
 
 Video upload
 
+Language Change
+
 Payment (?)
