@@ -7,14 +7,6 @@ export default function Header() {
       <Link href="/">
         <a>Home</a>
       </Link>
-      <br></br>
-      <Link href="/profile">
-        <a>Profile</a>
-      </Link>
-      <br></br>
-      <Link href="/about">
-        <a>About</a>
-      </Link>
     </div>
   );
 }

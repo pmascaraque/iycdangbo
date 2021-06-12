@@ -6,7 +6,7 @@ Making a new website for the nonprofit [Infancia y cirujia en Dangbo](https://in
 
 Display information
 
-Blo with Video upload
+Blog with Video upload hexo
 
 Language Change
 
