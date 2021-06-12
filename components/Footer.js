@@ -1,0 +1,9 @@
+import React from 'react'
+
+export default function Footer() {
+    return (
+        <div>
+            <a href="https://www.facebook.com/Asociaci%C3%B3n-Infancia-y-Cirug%C3%ADa-en-Dangbo-1414041928901454">facebook</a>
+        </div>
+    )
+}
