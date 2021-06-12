@@ -1,7 +1,12 @@
-export default function Home() {
+import React from "react";
+import Layout from "../components/Layout";
+
+function Index() {
   return (
-    <div>
+    <Layout>
       <a href="https://infanciaycirugiaendangbo.org/">https://infanciaycirugiaendangbo.org/</a>
-    </div>
-  )
+    </Layout>
+  );
 }
+
+export default Index;
