@@ -1,0 +1,10 @@
+.header {
+  width: 100%;
+  padding-left: 10%;
+  background-color: red;
+}
+
+.header > a {
+  margin: 1em;
+  width: 10px;
+}
