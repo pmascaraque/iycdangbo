@@ -1,10 +1,17 @@
 .header {
   width: 100%;
   padding-left: 10%;
-  background-color: red;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .header > a {
   margin: 1em;
   width: 10px;
+  padding: 10px 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.header > a:hover{
+  background-color: red;
 }
