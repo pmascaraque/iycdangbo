@@ -1,10 +1,10 @@
 import React from "react";
 import Link from "next/link";
+import styles from "./Header.module.css";
 
 export default function Header() {
-
   return (
-    <div className="header">
+    <div className={styles.header}>
       <Link href="/">
         <a>
           <img alt="" src={"./images/dangbo_logo.jpg"} />
