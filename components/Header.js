@@ -5,9 +5,10 @@ import styles from "./component_styles/Header.module.css";
 export default function Header() {
   return (
     <div className={styles.header}>
+      <style jsx>{`*{margin:0:}`}</style>
       <Link href="/">
         <a>
-          <img alt="" src={"./images/dangbo_logo.jpg"} style={{width : "10em"}} />
+          <img alt="" src={"./dangbo_logo.jpg"} style={{ width: "10em" }} />
         </a>
       </Link>
       <Link href="/about">
