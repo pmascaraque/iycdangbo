@@ -10,6 +10,18 @@ export default function Header() {
           <img alt="" src={"./images/dangbo_logo.jpg"} />
         </a>
       </Link>
+      <Link href="/about">
+        <a>ABOUT</a>
+      </Link>
+      <Link href="/news">
+        <a>NEWS</a>
+      </Link>
+      <Link href="/contact">
+        <a>CONTACT US</a>
+      </Link>
+      <Link href="/donate">
+        <a>DONATE</a>
+      </Link>
     </div>
   );
 }
