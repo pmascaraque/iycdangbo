@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Header() {
 
   return (
-    <div>
+    <div className="header">
       <Link href="/">
         <a>
           <img alt="" src={"./images/dangbo_logo.jpg"} />
