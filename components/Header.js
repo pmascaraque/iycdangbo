@@ -3,9 +3,6 @@ import Link from "next/link";
 import styles from "./component_styles/Header.module.css";
 
 export default function Header() {
-  const active = () => {
-    $('nav a[href^="/' + location.pathname.split("/")[1] + '"]').addClass("active");
-  };
   return (
     <div className={styles.header}>
       <style jsx global>{`
