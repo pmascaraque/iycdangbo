@@ -12,7 +12,7 @@ export default function Header() {
       `}</style>
       <Link href="/">
         <a>
-          <img alt="" src={"./dangbo_logo.jpg"} style={{ width: "10em" }} />
+          <img alt="" src={"./dangbo_logo.jpg"} style={{ height: "4em" }} />
         </a>
       </Link>
       <Link href="/about">
@@ -25,7 +25,7 @@ export default function Header() {
         <a>CONTACT US</a>
       </Link>
       <Link href="/donate">
-        <a>DONATE</a>
+        <a className={styles.donate} style={{ float: "right"}}>DONATE NOW</a>
       </Link>
     </div>
   );

@@ -1,17 +1,18 @@
 .header {
-  width: 100%;
-  padding-left: 10%;
+  padding: 0% 10%;
   font-family: Arial, Helvetica, sans-serif;
+  height: 7em;
+  border-bottom: black solid .1px;
 }
 
 .header > a {
-  margin: 1em;
-  width: 10px;
+  float: left;
+  margin: 1em 1em 0 1em;
   padding: 10px 10px;
   text-decoration: none;
   color: black;
 }
 
-.header > a:hover{
-  background-color: red;
+.donate {
+  border: 1px black solid;
 }

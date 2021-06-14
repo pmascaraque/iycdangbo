@@ -11,3 +11,5 @@ Blog with Video upload hexo
 Language Change
 
 Payment (?)
+
+dark mode
