@@ -29,7 +29,7 @@ function About() {
           HOW YOU CAN HELP
         </button>
       </div>
-      {active}
+      {active === 1 ? "1" : active === 2 ? "2" : "3"}
     </Layout>
   );
 }
