@@ -1,0 +1,23 @@
+.header {
+    border-top: 1px solid black;
+    padding: 5px 10%;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 4em;
+    margin: 0 20% 0 20%;
+  }
+  
+  .header > a {
+    float: left;
+    margin: 0em 1em 0 1em;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .header > a:hover {
+    background-color: #F1EFEF;
+  }
+  
+  .header > a:active {
+    transform: translateY(2px);
+  }

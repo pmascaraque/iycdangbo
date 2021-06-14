@@ -1,10 +1,11 @@
 import React from "react";
 import Layout from "../components/Layout";
-import styles from "../components/component_styles/Header.module.css";
+import About_navbar from "../components/page_components/About_navbar.js";
 
 function About() {
   return (
     <Layout>
+      <About_navbar />
       ABOUT
     </Layout>
   );
