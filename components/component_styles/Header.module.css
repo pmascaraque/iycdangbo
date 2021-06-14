@@ -7,11 +7,19 @@
 .header > a {
   float: left;
   margin: 1em 1em 0 1em;
-  padding: 10px 10px;
+  padding: 10px 15px;
   text-decoration: none;
   color: black;
 }
 
+.header > a:hover {
+  background-color: #F1EFEF;
+}
+
+.header > a:active {
+  transform: translateY(2px);
+}
+
 .donate {
-  border: 1px black solid;
+  border: 1px solid black;
 }
