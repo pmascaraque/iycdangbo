@@ -26,7 +26,7 @@ export default function Header() {
       </Link>
       <Link href="/donate">
         <a className={styles.donate} style={{ float: "right" }}>
-          AYUDA AHORA
+          COLABORA
         </a>
       </Link>
     </div>
