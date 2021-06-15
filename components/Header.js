@@ -16,17 +16,17 @@ export default function Header() {
         </a>
       </Link>
       <Link href="/about">
-        <a>ABOUT</a>
+        <a>QUIENES SOMOS</a>
       </Link>
       <Link href="/news">
-        <a>NEWS</a>
+        <a>NOTICIAS</a>
       </Link>
       <Link href="/contact">
-        <a>CONTACT US</a>
+        <a>CONTACTO</a>
       </Link>
       <Link href="/donate">
         <a className={styles.donate} style={{ float: "right" }}>
-          DONATE NOW
+          AYUDA AHORA
         </a>
       </Link>
     </div>

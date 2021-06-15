@@ -20,17 +20,17 @@ function About() {
             setActive(2);
           }}
         >
-          OUR WORK
+          NOSOTROS
         </button>
         <button
           onClick={() => {
             setActive(3);
           }}
         >
-          HOW YOU CAN HELP
+          COMO PUEDES AYUDAR
         </button>
       </div>
-      {active === 1 ? <Dangbo /> : active === 2 ? <Work /> : <Help />}
+      <div>{active === 1 ? <Dangbo /> : active === 2 ? <Work /> : <Help />}</div>
     </Layout>
   );
 }
