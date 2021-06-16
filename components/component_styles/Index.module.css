@@ -1,9 +1,9 @@
 .active {
-  color: red;
+  border-bottom: 1px solid red;
 }
 
 .navbar {
-  top: 4em;
+  top: 2em;
   left: 25em;
   position: fixed;
 }
