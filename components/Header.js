@@ -7,6 +7,7 @@ export default function Header() {
     <div className={styles.header}>
       <style jsx global>{`
         body {
+          min-height: 100vh;
           margin: 0;
         }
       `}</style>
@@ -15,11 +16,11 @@ export default function Header() {
           <img alt="" src={"./dangbo_logo.jpg"} style={{ height: "4em" }} />
         </a>
       </Link>
-      <Link href="/about">
-        <a>QUIENES SOMOS</a>
-      </Link>
       <Link href="/news">
         <a>NOTICIAS</a>
+      </Link>
+      <Link href="/about">
+        <a>QUIENES SOMOS</a>
       </Link>
       <Link href="/contact">
         <a>CONTACTO</a>
