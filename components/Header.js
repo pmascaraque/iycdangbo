@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <div className={styles.header}>
       <style jsx global>{`
-        * {
+        body {
           margin: 0;
         }
       `}</style>
