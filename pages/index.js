@@ -1,5 +1,4 @@
 import React from "react";
-import { render } from "react-dom";
 import Layout from "../components/Layout";
 import styles from "../components/component_styles/Index.module.css";
 import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from "react-scroll";
@@ -28,6 +27,9 @@ function Index() {
       <div id="test3">
         <Help />
       </div>
+      <Link to="test1" spy={true} smooth={true} duration={500}>
+        Back to Top
+      </Link>
     </Layout>
   );
 }

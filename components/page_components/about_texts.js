@@ -55,6 +55,46 @@ export function Dangbo() {
       
       <br/>    <br/>Lo habitan nueve millones de habitantes, franco-parlantes, pertenecientes a más de siete etnias que comparten por igual la belleza del país y la pobreza extrema, que lo coloca en los últimos puestos de desarrollo humano. IDH (índice desarrollo humano): puesto 172. La relación de médicos por habitante es de 0.1 cada 1000 (España 4.9), habiendo 0.2 camas por cada 1000 habitantes. (España 3.2)
       
+      <br/>La mortalidad infantil, la desnutrición y las enfermedades infecciosas son la primera causa de mortalidad
+      <br/>Lo habitan nueve millones de habitantes, franco-parlantes, pertenecientes a más de siete etnias que comparten por igual la belleza del país y la pobreza extrema, que lo coloca en los últimos puestos de desarrollo humano. IDH (índice desarrollo humano): puesto 172. La relación de médicos por habitante es de 0.1 cada 1000 (España 4.9), habiendo 0.2 camas por cada 1000 habitantes. (España 3.2)
+      
+      <br/>La mortalidad infantil, la desnutrición y las enfermedades infecciosas son la primera causa de mortalidad
+      
+      Dangbo es una localidad situada en la Región de Ouemé, al sur de Benín con una población de 77000 habitantes en una Superficie de 340 kms  cuadrados, con una estructura sanitaria deficitaria e insuficiente.
+
+      <br/> La Republica de Benín es un Estado de África Occidental  situado en el Golfo de Guinea que se extiende de norte a sur en una estrecha franja de 120 kms de ancho entre Togo Y Nigeria y limita con Níger y Burkina Faso por el norte.
+      
+      <br/>Lo habitan nueve millones de habitantes, franco-parlantes, pertenecientes a más de siete etnias que comparten por igual la belleza del país y la pobreza extrema, que lo coloca en los últimos puestos de desarrollo humano. IDH (índice desarrollo humano): puesto 172. La relación de médicos por habitante es de 0.1 cada 1000 (España 4.9), habiendo 0.2 camas por cada 1000 habitantes. (España 3.2)
+      
+      <br/>Lo habitan nueve millones de habitantes, franco-parlantes, pertenecientes a más de siete etnias que comparten por igual la belleza del país y la pobreza extrema, que lo coloca en los últimos puestos de desarrollo humano. IDH (índice desarrollo humano): puesto 172. La relación de médicos por habitante es de 0.1 cada 1000 (España 4.9), habiendo 0.2 camas por cada 1000 habitantes. (España 3.2)
+      
+      <br/>La mortalidad infantil, la desnutrición y las enfermedades infecciosas son la primera causa de mortalidad
+      
+      Dangbo es una localidad situada en la Región de Ouemé, al sur de Benín con una población de 77000 habitantes en una Superficie de 340 kms  cuadrados, con una estructura sanitaria deficitaria e insuficiente.
+
+      <br/> La Republica de Benín es un Estado de África Occidental  situado en el Golfo de Guinea que se extiende de norte a sur en una estrecha franja de 120 kms de ancho entre Togo Y Nigeria y limita con Níger y Burkina Faso por el norte.
+      
+      <br/>Lo habitan nueve millones de habitantes, franco-parlantes, pertenecientes a más de siete etnias que comparten por igual la belleza del país y la pobreza extrema, que lo coloca en los últimos puestos de desarrollo humano. IDH (índice desarrollo humano): puesto 172. La relación de médicos por habitante es de 0.1 cada 1000 (España 4.9), habiendo 0.2 camas por cada 1000 habitantes. (España 3.2)
+      
+      
+      Dangbo es una localidad situada en la Región de Ouemé, al sur de Benín con una población de 77000 habitantes en una Superficie de 340 kms  cuadrados, con una estructura sanitaria deficitaria e insuficiente.
+
+      <br/> La Republica de Benín es un Estado de África Occidental  situado en el Golfo de Guinea que se extiende de norte a sur en una estrecha franja de 120 kms de ancho entre Togo Y Nigeria y limita con Níger y Burkina Faso por el norte.
+      
+      <br/>Lo habitan nueve millones de habitantes, franco-parlantes, pertenecientes a más de siete etnias que comparten por igual la belleza del país y la pobreza extrema, que lo coloca en los últimos puestos de desarrollo humano. IDH (índice desarrollo humano): puesto 172. La relación de médicos por habitante es de 0.1 cada 1000 (España 4.9), habiendo 0.2 camas por cada 1000 habitantes. (España 3.2)
+      
+      <br/>Lo habitan nueve millones de habitantes, franco-parlantes, pertenecientes a más de siete etnias que comparten por igual la belleza del país y la pobreza extrema, que lo coloca en los últimos puestos de desarrollo humano. IDH (índice desarrollo humano): puesto 172. La relación de médicos por habitante es de 0.1 cada 1000 (España 4.9), habiendo 0.2 camas por cada 1000 habitantes. (España 3.2)
+      
+      <br/>La mortalidad infantil, la desnutrición y las enfermedades infecciosas son la primera causa de mortalidad
+      
+      Dangbo es una localidad situada en la Región de Ouemé, al sur de Benín con una población de 77000 habitantes en una Superficie de 340 kms  cuadrados, con una estructura sanitaria deficitaria e insuficiente.
+
+      <br/> La Republica de Benín es un Estado de África Occidental  situado en el Golfo de Guinea que se extiende de norte a sur en una estrecha franja de 120 kms de ancho entre Togo Y Nigeria y limita con Níger y Burkina Faso por el norte.
+      
+      <br/>Lo habitan nueve millones de habitantes, franco-parlantes, pertenecientes a más de siete etnias que comparten por igual la belleza del país y la pobreza extrema, que lo coloca en los últimos puestos de desarrollo humano. IDH (índice desarrollo humano): puesto 172. La relación de médicos por habitante es de 0.1 cada 1000 (España 4.9), habiendo 0.2 camas por cada 1000 habitantes. (España 3.2)
+      
+      <br/>Lo habitan nueve millones de habitantes, franco-parlantes, pertenecientes a más de siete etnias que comparten por igual la belleza del país y la pobreza extrema, que lo coloca en los últimos puestos de desarrollo humano. IDH (índice desarrollo humano): puesto 172. La relación de médicos por habitante es de 0.1 cada 1000 (España 4.9), habiendo 0.2 camas por cada 1000 habitantes. (España 3.2)
+      
       <br/>La mortalidad infantil, la desnutrición y las enfermedades infecciosas son la primera causa de mortalidad.
       
       Dangbo es una localidad situada en la Región de Ouemé, al sur de Benín con una población de 77000 habitantes en una Superficie de 340 kms  cuadrados, con una estructura sanitaria deficitaria e insuficiente.
@@ -93,7 +133,27 @@ Fundada en febrero de 2014    <br/>Lo habitan nueve millones de habitantes, fran
 
       <br/> La Republica de Benín es un Estado de África Occidental  situado en el Golfo de Guinea que se extiende de norte a sur en una estrecha franja de 120 kms de ancho entre Togo Y Nigeria y limita con Níger y Burkina Faso por el norte.
       
-      <br/>, fue inscrita en el Registro Nacional de Asociaciones del Ministerio del Interior en Mayo de 2014 y en el Registro de Organizaciones No Gubernamentales de Desarrollo con el Nº 2833 el 22 de enero de 2016. Es una Asociación sin Fines de Lucro, cumpliendo con esto todos los requisitos legales necesarios para desarrollar su actividad.
+      <br/>, f<br/>Lo habitan nueve millones de habitantes, franco-parlantes, pertenecientes a más de siete etnias que comparten por igual la belleza del país y la pobreza extrema, que lo coloca en los últimos puestos de desarrollo humano. IDH (índice desarrollo humano): puesto 172. La relación de médicos por habitante es de 0.1 cada 1000 (España 4.9), habiendo 0.2 camas por cada 1000 habitantes. (España 3.2)
+      
+      <br/>La mortalidad infantil, la desnutrición y las enfermedades infecciosas son la primera causa de mortalidad
+      
+      Dangbo es una localidad situada en la Región de Ouemé, al sur de Benín con una población de 77000 habitantes en una Superficie de 340 kms  cuadrados, con una estructura sanitaria deficitaria e insuficiente.
+
+      <br/> La Republica de Benín es un Estado de África Occidental  situado en el Golfo de Guinea que se extiende de norte a sur en una estrecha franja de 120 kms de ancho entre Togo Y Nigeria y limita con Níger y Burkina Faso por el norte.
+      
+      <br/>Lo habitan nueve millones de habitantes, franco-parlantes, pertenecientes a más de siete etnias que comparten por igual la belleza del país y la pobreza extrema, que lo coloca en los últimos puestos de desarrollo humano. IDH (índice desarrollo humano): puesto 172. La relación de médicos por habitante es de 0.1 cada 1000 (España 4.9), habiendo 0.2 camas por cada 1000 habitantes. (España 3.2)
+      
+      <br/>Lo habitan nueve millones de habitantes, franco-parlantes, pertenecientes a más de siete etnias que comparten por igual la belleza del país y la pobreza extrema, que lo coloca en los últimos puestos de desarrollo humano. IDH (índice desarrollo humano): puesto 172. La relación de médicos por habitante es de 0.1 cada 1000 (España 4.9), habiendo 0.2 camas por cada 1000 habitantes. (España 3.2)
+      
+      <br/>La mortalidad infantil, la desnutrición y las enfermedades infecciosas son la primera causa de mortalidad
+      
+      Dangbo es una localidad situada en la Región de Ouemé, al sur de Benín con una población de 77000 habitantes en una Superficie de 340 kms  cuadrados, con una estructura sanitaria deficitaria e insuficiente.
+
+      <br/> La Republica de Benín es un Estado de África Occidental  situado en el Golfo de Guinea que se extiende de norte a sur en una estrecha franja de 120 kms de ancho entre Togo Y Nigeria y limita con Níger y Burkina Faso por el norte.
+      
+      <br/>Lo habitan nueve millones de habitantes, franco-parlantes, pertenecientes a más de siete etnias que comparten por igual la belleza del país y la pobreza extrema, que lo coloca en los últimos puestos de desarrollo humano. IDH (índice desarrollo humano): puesto 172. La relación de médicos por habitante es de 0.1 cada 1000 (España 4.9), habiendo 0.2 camas por cada 1000 habitantes. (España 3.2)
+      
+      ue inscrita en el Registro Nacional de Asociaciones del Ministerio del Interior en Mayo de 2014 y en el Registro de Organizaciones No Gubernamentales de Desarrollo con el Nº 2833 el 22 de enero de 2016. Es una Asociación sin Fines de Lucro, cumpliendo con esto todos los requisitos legales necesarios para desarrollar su actividad.
 
       El OBJETIVO es realizar Campañas Quirúrgicas periódicas que incluyan Cirugía Pediátrica y General de Adultos, Ginecología, O.R.L. y apoyo de pediatras, Médicos de Familia y Enfermería para organizar nuestro trabajo. El Hospital del amor Redentor es un Hospital Secundario que cuenta con Consultas externas, un Quirófano adecuado con algunas deficiencias técnicas y de aporte energético, Salas de Ingreso de pacientes, deficientes, Laboratorio básico con capacidad para diagnóstico de Malaria y HIV, enfermedades infecciosas prevalentes en la zona. Está dirigido por la Madre Opportune Tosse, Médica Internista con el apoyo de un Médico de Familia. El personal de Enfermería es escaso dado los costes, muy capacitado y un Servicio de Admisión muy básico.
       
