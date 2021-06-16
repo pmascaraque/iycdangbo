@@ -8,17 +8,17 @@ function Index() {
   return (
     <Layout>
       <div className={styles.navbar}>
-        <Link activeClass={styles.active} to="test1" spy={true} smooth={true} duration={500}>
-          Test 1
+        <Link activeClass={styles.active} className={styles.link} to="dangbo" spy={true} smooth={true} duration={500}>
+          Dangbo
         </Link>
-        <Link activeClass={styles.active} to="test2" spy={true} smooth={true} duration={500}>
-          Test 2
+        <Link activeClass={styles.active} className={styles.link} to="test2" spy={true} smooth={true} duration={500}>
+          Asociación
         </Link>
-        <Link activeClass={styles.active} to="test3" spy={true} smooth={true} duration={500}>
-          Test 3
+        <Link activeClass={styles.active} className={styles.link} to="test3" spy={true} smooth={true} duration={500}>
+          Proyecto
         </Link>
       </div>
-      <div id="test1">
+      <div id="dangbo">
         <Dangbo />
       </div>
       <div id="test2">
@@ -27,7 +27,7 @@ function Index() {
       <div id="test3">
         <Help />
       </div>
-      <Link to="test1" spy={true} smooth={true} duration={500}>
+      <Link to="test1" className={styles.link} spy={true} smooth={true} duration={500}>
         Back to Top
       </Link>
     </Layout>

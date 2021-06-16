@@ -1,9 +1,25 @@
-.active{
-    color: red;
+.active {
+  color: red;
 }
 
-.navbar{
-    top: 4em;
-    left: 25em;
-    position: fixed;
+.navbar {
+  top: 4em;
+  left: 25em;
+  position: fixed;
+}
+
+.link {
+  float: left;
+  margin: 1em 1em 0 1em;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: black;
+}
+
+.link:hover {
+  background-color: #f1efef;
+}
+
+.link:active {
+  transform: translateY(2px);
 }
