@@ -22,9 +22,9 @@ export default function ImageSwiper() {
         navigation={true}
         className="mySwiper"
       >
-        <SwiperSlide><img alt="" src={"./BANNER1.jpg"} /></SwiperSlide>
-        <SwiperSlide><img alt="" src={"./BANNER2.jpg"} /></SwiperSlide>
-        <SwiperSlide><img alt="" src={"./BANNER3.jpg"} /></SwiperSlide>
+        <SwiperSlide><img alt="" src={"./BANNER1.jpg"} style={{height:"40em"}}/></SwiperSlide>
+        <SwiperSlide><img alt="" src={"./BANNER2.jpg"} style={{height:"40em"}}/></SwiperSlide>
+        <SwiperSlide><img alt="" src={"./BANNER3.jpg"} style={{height:"40em"}}/></SwiperSlide>
       </Swiper>
     </div>
   );

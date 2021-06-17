@@ -29,3 +29,7 @@
   border: 1px solid black;
   position: absolute;
 }
+
+.swiper {
+  height: 80em;
+}
