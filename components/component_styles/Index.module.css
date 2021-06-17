@@ -25,10 +25,9 @@
   transform: translateY(2px);
 }
 
-.dangbo{
-    margin-top:4em;
-}
-
-.swiper img{
- 
+.swiper {
+  margin-top: 7em;
+  text-align: center;
+  position: relative;
+  z-index:-1;
 }

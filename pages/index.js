@@ -19,11 +19,14 @@ function Index() {
           Proyecto
         </Link>
       </div>
-      <div id="dangbo" className={styles.dangbo}>
-        <Dangbo />
-      </div>
       <div id="swiper" className={styles.swiper}>
         <ImageSwiper />
+      </div>
+      <Link to="dangbo" className={styles.link} spy={true} smooth={true} duration={500}>
+        Dangbo
+      </Link>
+      <div id="dangbo" className={styles.dangbo}>
+        <Dangbo />
       </div>
       <div id="work">
         <Work />
