@@ -22,7 +22,7 @@ function Index() {
       <div id="dangbo" className={styles.dangbo}>
         <Dangbo />
       </div>
-      <div id="swiper">
+      <div id="swiper" className={styles.swiper}>
         <ImageSwiper />
       </div>
       <div id="work">

@@ -1,6 +1,8 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-
 import SwiperCore, { Autoplay, Pagination, Navigation } from "swiper/core";
+import "swiper/swiper.min.css";
+import "swiper/components/pagination/pagination.min.css"
+import "swiper/components/navigation/navigation.min.css"
 
 SwiperCore.use([Autoplay, Pagination, Navigation]);
 
@@ -20,15 +22,9 @@ export default function ImageSwiper() {
         navigation={true}
         className="mySwiper"
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
+        <SwiperSlide><img alt="" src={"./BANNER1.jpg"} /></SwiperSlide>
+        <SwiperSlide><img alt="" src={"./BANNER2.jpg"} /></SwiperSlide>
+        <SwiperSlide><img alt="" src={"./BANNER3.jpg"} /></SwiperSlide>
       </Swiper>
     </div>
   );
