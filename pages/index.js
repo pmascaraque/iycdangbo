@@ -11,23 +11,23 @@ function Index() {
         <Link activeClass={styles.active} className={styles.link} to="dangbo" spy={true} smooth={true} duration={500}>
           Dangbo
         </Link>
-        <Link activeClass={styles.active} className={styles.link} to="test2" spy={true} smooth={true} duration={500}>
+        <Link activeClass={styles.active} className={styles.link} to="work" spy={true} smooth={true} duration={500}>
           Asociación
         </Link>
-        <Link activeClass={styles.active} className={styles.link} to="test3" spy={true} smooth={true} duration={500}>
+        <Link activeClass={styles.active} className={styles.link} to="help" spy={true} smooth={true} duration={500}>
           Proyecto
         </Link>
       </div>
       <div id="dangbo">
         <Dangbo />
       </div>
-      <div id="test2">
+      <div id="work">
         <Work />
       </div>
-      <div id="test3">
+      <div id="help">
         <Help />
       </div>
-      <Link to="test1" className={styles.link} spy={true} smooth={true} duration={500}>
+      <Link to="dangbo" className={styles.link} spy={true} smooth={true} duration={500}>
         Back to Top
       </Link>
     </Layout>

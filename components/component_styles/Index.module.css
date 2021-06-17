@@ -18,6 +18,7 @@
 
 .link:hover {
   background-color: #f1efef;
+  cursor: pointer;
 }
 
 .link:active {
