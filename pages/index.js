@@ -18,7 +18,7 @@ function Index() {
           Proyecto
         </Link>
       </div>
-      <div id="dangbo">
+      <div id="dangbo" className={styles.dangbo}>
         <Dangbo />
       </div>
       <div id="work">
