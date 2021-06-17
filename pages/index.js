@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "../components/Layout";
 import styles from "../components/component_styles/Index.module.css";
 import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from "react-scroll";
+import Swiper from "../components/page_components/index_image_swiper";
 import { Dangbo, Work, Help } from "../components/page_components/about_texts";
 
 function Index() {
@@ -18,6 +19,9 @@ function Index() {
           Proyecto
         </Link>
       </div>
+      <div id="swiper">
+        <Swiper />
+      </div>
       <div id="dangbo" className={styles.dangbo}>
         <Dangbo />
       </div>
@@ -27,7 +31,7 @@ function Index() {
       <div id="help">
         <Help />
       </div>
-      <Link to="dangbo" className={styles.link} spy={true} smooth={true} duration={500}>
+      <Link to="swiper" className={styles.link} spy={true} smooth={true} duration={500}>
         Back to Top
       </Link>
     </Layout>
