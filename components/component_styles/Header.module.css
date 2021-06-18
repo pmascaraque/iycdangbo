@@ -30,6 +30,6 @@
   position: absolute;
 }
 
-.swiper {
+.swiper > img {
   height: 80em;
 }
