@@ -2,8 +2,8 @@ import React from "react";
 import Layout from "../components/Layout";
 import styles from "../components/component_styles/Index.module.css";
 import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from "react-scroll";
-import ImageSwiper from "../components/page_components/Index_image_swiper";
-import { Dangbo, Work, Help } from "../components/page_components/About_texts";
+import ImageSwiper from "../components/page_components/index_image_swiper";
+import { Dangbo, Work, Help } from "../components/page_components/about_texts";
 
 function Index() {
   return (
