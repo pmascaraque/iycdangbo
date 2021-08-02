@@ -13,3 +13,17 @@ Language Change
 Payment (?)
 
 dark mode
+
+## Immediate Steps 
+
+Make responsive layout with navbar and footer
+
+Write all pages
+
+Implement Blog utility
+
+Re-write all campaign blogs
+
+Implement online-payment
+
+Deployment
