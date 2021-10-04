@@ -12,18 +12,14 @@ Language Change
 
 Payment (?)
 
+chat/contact
+
 dark mode
 
-## Immediate Steps 
+## Final Steps
 
-Make responsive layout with navbar and footer
+Deploy GCR
 
-Write all pages
+Feedback FF, A & J.
 
-Implement Blog utility
-
-Re-write all campaign blogs
-
-Implement online-payment
-
-Deployment
+Migrate GCR into Web Hosting.
