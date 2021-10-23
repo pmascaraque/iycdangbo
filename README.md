@@ -25,11 +25,8 @@
   <summary>Table of Contents</summary>
   <ol>
     <li><a href="#description">Description</a></li>
-    <li><a href="#installation">Installation</a></li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#technology">Technology</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#License">License</a></li>
   </ol>
 </details>
 
@@ -38,31 +35,31 @@
 
 ## Description
 
-A description of your project follows. A good description is clear, short, and to the point. Describe the importance of your project, and what it does.
+Website repository for the website of the non-profit association "Infancia y Cirujia en Dangbo". With this website, we aim to bring much needed attention and funding to the peoples of Benin. 
 
-## Installation
+## Technology
 
-Installation is the next section in an effective README. Tell other users how to install your project locally. Optionally, include a gif to make the process even more clear for other people.
+The tools used for this project can be found here:
+<details closed="closed">
+  <summary>Table of Contents</summary>
+  <ol>
+    <li><a href="https://reactjs.org/docs/getting-started.html">React</a></li>
+    <li><a href="https://nodejs.org/en/docs/">Node</a></li>
+    <li><a href="https://expressjs.com/">Express</a></li>
+    <li><a href="https://nextjs.org/docs/getting-started">Next</a></li>
+    <li><a href="https://figma.com">Figma</a></li>
+    <li><a href="https://stripe.com">Stripe</a></li>
+    <li><a href="https://hexo.io/">Hexo</a></li>
+    <li><a href="https://swiperjs.com/">Swiper</a></li>
+    <li><a href="https://www.npmjs.com/package/react-scroll">React-Scroll</a></li>
+  </ol>
+</details>
 
-## Usage
-
-The next section is usage, in which you instruct other people on how to use your project after they’ve installed it. This would also be a good place to include screenshots of your project in action.
-
-## Contributing
-
-Larger projects often have sections on contributing to their project, in which contribution instructions are outlined. Sometimes, this is a separate file. If you have specific contribution preferences, explain them so that other developers know how to best contribute to your work. To learn more about how to help others contribute, check out the guide for [setting guidelines for repository contributors](https://help.github.com/articles/setting-guidelines-for-repository-contributors/).
 
 ## Contact
 
-Optional. 
-
-## License
-
-Finally, include a section for the license of your project. For more information on choosing a license, check out GitHub’s [licensing guide](http://choosealicense.com/)!
-
-
-
-From https://guides.github.com/features/wikis/
+[Organization](asociacioncirugiaendangbo@gmail.com)
+[Development Team](https://github.com/pmascaraque/iycdangbo/discussions)
 
 
 
