@@ -41,6 +41,12 @@ function Donate() {
             />
           </div>
         </div>
+        <input
+          type="text"
+          id="payment"
+          class="w-1/6 inline-block text-sm bg-grey-light text-grey-darkest rounded-r p-3 focus:outline-none"
+          placeholder="Quantity €"
+        />
       </div>
       <Elements stripe={stripePromise}></Elements>
       <form action="/create-checkout-session" method="POST">
