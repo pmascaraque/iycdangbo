@@ -1,6 +1,13 @@
 import React from "react";
 import Layout from "../components/Layout";
-import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from "react-scroll";
+import {
+  Link,
+  Element,
+  Events,
+  animateScroll as scroll,
+  scrollSpy,
+  scroller,
+} from "react-scroll";
 import ImageSwiper from "../components/page_components/index_image_swiper";
 import { Dangbo, Work, Help } from "../components/page_components/about_texts";
 import "tailwindcss/tailwind.css";
@@ -19,9 +26,9 @@ function Index() {
           Proyecto
         </Link>
       </div>
-      <div id="swiper">
+      {/* <div id="swiper">
         <ImageSwiper />
-      </div>
+      </div> */}
       <Link to="dangbo" spy={true} smooth={true} duration={500}>
         Dangbo
       </Link>
