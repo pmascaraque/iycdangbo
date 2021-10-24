@@ -1,6 +1,5 @@
 import React from "react";
 import Layout from "../components/Layout";
-import styles from "../components/component_styles/Index.module.css";
 import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from "react-scroll";
 import ImageSwiper from "../components/page_components/index_image_swiper";
 import { Dangbo, Work, Help } from "../components/page_components/about_texts";
@@ -9,24 +8,24 @@ import "tailwindcss/tailwind.css";
 function Index() {
   return (
     <Layout>
-      <div className={styles.navbar}>
-        <Link activeClass={styles.active} className={styles.link} to="dangbo" spy={true} smooth={true} duration={500}>
+      <div>
+        <Link to="dangbo" spy={true} smooth={true} duration={500}>
           Dangbo
         </Link>
-        <Link activeClass={styles.active} className={styles.link} to="work" spy={true} smooth={true} duration={500}>
+        <Link to="work" spy={true} smooth={true} duration={500}>
           Asociación
         </Link>
-        <Link activeClass={styles.active} className={styles.link} to="help" spy={true} smooth={true} duration={500}>
+        <Link to="help" spy={true} smooth={true} duration={500}>
           Proyecto
         </Link>
       </div>
-      <div id="swiper" className={styles.swiper}>
+      <div id="swiper">
         <ImageSwiper />
       </div>
-      <Link to="dangbo" className={styles.link} spy={true} smooth={true} duration={500}>
+      <Link to="dangbo" spy={true} smooth={true} duration={500}>
         Dangbo
       </Link>
-      <div id="dangbo" className={styles.dangbo}>
+      <div id="dangbo">
         <Dangbo />
       </div>
       <div id="work">
@@ -35,7 +34,7 @@ function Index() {
       <div id="help">
         <Help />
       </div>
-      <Link to="swiper" className={styles.link} spy={true} smooth={true} duration={500}>
+      <Link to="swiper" spy={true} smooth={true} duration={500}>
         Back to Top
       </Link>
     </Layout>
