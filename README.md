@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://iycdangbo.vercel.app/dangbo_logo.jpg" alt="Logo" width="80">
+  <img src="https://iycdangbo.vercel.app/dangbo_logo.jpg" alt="Logo" width="240">
 </p>
 
 
@@ -41,7 +41,7 @@ Website repository for the website of the non-profit association "Infancia y Cir
 
 The tools used for this project can be found here:
 <details closed="closed">
-  <summary>Table of Contents</summary>
+  <summary>List</summary>
   <ol>
     <li><a href="https://reactjs.org/docs/getting-started.html">React</a></li>
     <li><a href="https://nodejs.org/en/docs/">Node</a></li>
