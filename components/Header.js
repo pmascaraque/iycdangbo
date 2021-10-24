@@ -1,19 +1,12 @@
 import React from "react";
 import Link from "next/link";
-import styles from "./component_styles/Header.module.css";
 
 export default function Header() {
   return (
-    <div className={styles.header}>
-      <style jsx global>{`
-        body {
-          min-height: 100vh;
-          margin: 0;
-        }
-      `}</style>
+    <div>
       <Link href="/">
         <a>
-          <img alt="" src={"./dangbo_logo.jpg"} style={{ height: "4em" }} />
+          <img alt="" src={"./dangbo_logo.jpg"} />
         </a>
       </Link>
       <Link href="/news">
@@ -26,9 +19,7 @@ export default function Header() {
         <a>CONTACTO</a>
       </Link>
       <Link href="/donate">
-        <a className={styles.donate} style={{ float: "right" }}>
-          COLABORA
-        </a>
+        <a>COLABORA</a>
       </Link>
     </div>
   );
