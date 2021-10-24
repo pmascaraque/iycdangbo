@@ -1,4 +1,4 @@
 export default {
-    boldWord: 'Dangbo ',
-    text: 'necesita tu ayuda'
+  boldWord: 'Dangbo ',
+  text: 'necesita tu ayuda'
 };
