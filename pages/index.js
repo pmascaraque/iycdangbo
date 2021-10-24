@@ -18,9 +18,9 @@ function Index() {
           Proyecto
         </Link>
       </div>
-      <div id="swiper">
+      {/* <div id="swiper">
         <ImageSwiper />
-      </div>
+      </div> */}
       <Link to="dangbo" spy={true} smooth={true} duration={500}>
         Dangbo
       </Link>
