@@ -1,4 +1,4 @@
-import data from '/data/hero';
+import data from "/data/hero";
 
 function Hero() {
   return (

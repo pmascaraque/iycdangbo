@@ -1,6 +1,6 @@
-import React from 'react';
-import Link from 'next/link';
-import data from '../data/header';
+import React from "react";
+import Link from "next/link";
+import data from "../data/header";
 export default function Header() {
   return (
     <div className="h-16 fixed top-0 z-10 shadow-md bg-white w-screen flex justify-between md:place-items-center p-2 md:justify-between">
