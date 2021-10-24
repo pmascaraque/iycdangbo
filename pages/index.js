@@ -10,7 +10,6 @@ import {
 } from "react-scroll";
 import ImageSwiper from "../components/page_components/index_image_swiper";
 import { Dangbo, Work, Help } from "../components/page_components/about_texts";
-import "tailwindcss/tailwind.css";
 
 function Index() {
   return (
