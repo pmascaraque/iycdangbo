@@ -34,7 +34,7 @@ function Donate() {
               class="w-1/6 inline-block text-sm bg-grey-light text-grey-darkest rounded-r p-3 focus:outline-none"
               placeholder="Address"
             />
-                        <input
+            <input
               type="text"
               id="payment"
               class="w-1/6 flex-1 text-sm bg-grey-light text-grey-darkest rounded-l p-3 focus:outline-none"
