@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useRef} from "react";
 import Layout from "../components/Layout";
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements, CardElement } from "@stripe/react-stripe-js";
@@ -8,6 +8,8 @@ const stripePromise = loadStripe(
 ); // TEST KEY
 
 function Donate() {
+
+  const AmountRef = useRef();
   return (
     <Layout>
       <div className="bg-white my-4 shadow p-8 rounded-lg">
@@ -57,24 +59,38 @@ function Donate() {
             <input
               type="text"
               id="payment"
-              class="w-2/4 flex-1 text-sm bg-grey-light text-grey-darkest rounded-l p-3 focus:outline-none"
+              class="w-1/5 text-sm bg-grey-light text-grey-darkest rounded-l p-3 focus:outline-none"
+              placeholder="Amount"
+              ref={AmountRef}
+            />
+            <input
+              type="text"
+              id="payment"
+              class="w-2/5 flex-1 text-sm bg-grey-light text-grey-darkest rounded-l p-3 focus:outline-none"
               placeholder="Card Number"
             />
             <input
               type="text"
               id="payment"
-              class="w-1/4 inline-block text-sm bg-grey-light text-grey-darkest p-3 focus:outline-none"
+              class="w-1/5 inline-block text-sm bg-grey-light text-grey-darkest p-3 focus:outline-none"
               placeholder="MM / YY"
             />
             <input
               type="text"
               id="payment"
-              class="w-1/4 inline-block text-sm bg-grey-light text-grey-darkest rounded-r p-3 focus:outline-none"
+              class="w-1/5 inline-block text-sm bg-grey-light text-grey-darkest rounded-r p-3 focus:outline-none"
               placeholder="CVC"
             />
           </div>
         </div>
       </div>
+      <button
+              onClick={() => {
+                console.log(AmountRef.current.value)
+              }}
+            >
+             LOG
+            </button>
       <Elements stripe={stripePromise}></Elements>
       <form action="/create-checkout-session" method="POST">
         <button type="submit">Donate</button>
