@@ -4,7 +4,7 @@ export default {
   logoURL:
     "https://ik.imagekit.io/300/0IyCDangboResources/logo?updatedAt=1635070798989",
   buttons: {
-    home: "Inicio",
+    news: "Noticias",
     about_us: "Quiénes somos",
     colaborate: "Colabora",
   },
