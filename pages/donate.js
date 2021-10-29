@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import Layout from "../components/Layout";
 import { loadStripe } from "@stripe/stripe-js";
-import { Elements, CardElement } from "@stripe/react-stripe-js";
+import { Elements, CardElement, PaymentElement } from "@stripe/react-stripe-js";
 
 const express = require("express");
 const app = express();
@@ -9,12 +9,17 @@ const stripePromise = loadStripe(
   "pk_test_51JnN3zHnwRpJy9ynon9s3tID7EGhAlZzukRevAvodhXUbQTokppHJEUCOllMdzFw1o8c3044fDzUBmmlVb1tQPcb00VJ0tig1T"
 );
 
+const options = {
+  // passing the client secret obtained in step 2
+  clientSecret: "{{CLIENT_SECRET}}",
+  // Fully customizable with appearance API.
+  appearance: {
+    /*...*/
+  }
+};
+
 app.get("/secret", async (req, res) => {
   const intent = res.json({ client_secret: intent.client_secret }); // ... Fetch or create the PaymentIntent
-});
-
-app.listen(3000, () => {
-  console.log("Running on port 3000");
 });
 
 (async () => {
@@ -29,6 +34,7 @@ function Donate() {
     <Layout>
       <div>
         <Elements stripe={stripePromise} options={options}>
+          <PaymentElement />
           <div className="bg-white my-4 shadow p-8 rounded-lg">
             <h2 className="text-lg">Your Payment Information</h2>
 
