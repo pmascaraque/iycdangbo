@@ -1,4 +1,4 @@
-import React, {useRef} from "react";
+import React, { useRef } from "react";
 import Layout from "../components/Layout";
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements, CardElement } from "@stripe/react-stripe-js";
@@ -7,8 +7,9 @@ const stripePromise = loadStripe(
   "sk_test_51JnN3zHnwRpJy9ynJMJUpGBoT8fiyAQQFR3qKPos6NwAWZrGrRDAecr0KLNRLD6LTP47GrlkdIGVZjRYOOBJ9ixO00kCzNLlVp"
 ); // TEST KEY
 
-function Donate() {
 
+
+function Donate() {
   const AmountRef = useRef();
   return (
     <Layout>
@@ -85,12 +86,12 @@ function Donate() {
         </div>
       </div>
       <button
-              onClick={() => {
-                console.log(AmountRef.current.value)
-              }}
-            >
-             LOG
-            </button>
+        onClick={() => {
+          console.log(AmountRef.current.value * 100);
+        }}
+      >
+        LOG
+      </button>
       <Elements stripe={stripePromise}></Elements>
       <form action="/create-checkout-session" method="POST">
         <button type="submit">Donate</button>
