@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import Layout from "../components/Layout";
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements, CardElement, PaymentElement } from "@stripe/react-stripe-js";
@@ -29,7 +29,30 @@ app.get("/secret", async (req, res) => {
 })();
 
 function Donate() {
-  const AmountRef = useRef();
+  const AmountRef = useRef();ç
+
+  //SKETCHY 5555555555555555555555
+  useEffect(() => {
+    // Create PaymentIntent as soon as the page loads
+    fetch("/create-payment-intent", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ items: [{ id: "xl-tshirt" }] }),
+    })
+      .then((res) => res.json())
+      .then((data) => setClientSecret(data.clientSecret));
+  }, []);
+
+  const appearance = {
+    theme: 'stripe',
+  };
+  const options = {
+    clientSecret,
+    appearance,
+  };
+  //UP TO HERE 5555555555555555555555
+
+  const [clientSecret, setClientSecret] = useState("");
   return (
     <Layout>
       <div>
