@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://iycdangbo.vercel.app/dangbo_logo.jpg" alt="Logo" width="240">
+  <img src="https://infanciaycirugiaendangbo.org/wp-content/uploads/2015/10/dangbo_logo.png" alt="Logo" width="240">
 </p>
 
 
