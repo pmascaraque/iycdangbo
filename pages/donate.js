@@ -1,7 +1,9 @@
 import React, { useRef, useState, useEffect } from "react";
 import Layout from "../components/Layout";
 import { loadStripe } from "@stripe/stripe-js";
-import { Elements, CardElement, PaymentElement } from "@stripe/react-stripe-js";
+import { Elements } from "@stripe/react-stripe-js";
+
+//price should be *100
 
 import CheckoutForm from "../components/page_components/CheckoutForm";
 
@@ -11,9 +13,7 @@ const stripePromise = loadStripe(
 
 function Donate() {
   const [clientSecret, setClientSecret] = useState("");
-  const AmountRef = useRef();
 
-  //SKETCHY 5555555555555555555555
   useEffect(() => {
     // Create PaymentIntent as soon as the page loads
     fetch("/create-payment-intent", {
@@ -32,10 +32,9 @@ function Donate() {
     clientSecret,
     appearance
   };
-  //UP TO HERE 5555555555555555555555
 
   return (
-    <layout>
+    <Layout>
       <div className="Form">
         {clientSecret && (
           <Elements options={options} stripe={stripePromise}>
@@ -43,7 +42,7 @@ function Donate() {
           </Elements>
         )}
       </div>
-    </layout>
+    </Layout>
   );
 }
 
