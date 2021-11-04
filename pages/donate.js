@@ -2,14 +2,14 @@ import React, { useRef, useState, useEffect } from "react";
 import Layout from "../components/Layout";
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
+import Stripe from "Stripe";
+import { createCheckoutSession } from "next-stripe/client";
 
 //price should be *100
 
 import CheckoutForm from "../components/page_components/CheckoutForm";
 
-const stripePromise = loadStripe(
-  "pk_test_51JnN3zHnwRpJy9ynon9s3tID7EGhAlZzukRevAvodhXUbQTokppHJEUCOllMdzFw1o8c3044fDzUBmmlVb1tQPcb00VJ0tig1T"
-);
+const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_KEY);
 
 function Donate() {
   const [clientSecret, setClientSecret] = useState("");
