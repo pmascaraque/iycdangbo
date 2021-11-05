@@ -3,26 +3,13 @@ import Layout from "../components/Layout";
 import { Dangbo, Work, Help } from "../components/page_components/about_texts";
 import Hero from "../components/Hero";
 import { Link } from "react-scroll";
+import Story from "../components/Story";
 
 function Index() {
   return (
     <Layout>
       <Hero />
-      <Link to="dangbo" spy={true} smooth={true} duration={500}>
-        Dangbo
-      </Link>
-      <div id="dangbo">
-        <Dangbo />
-      </div>
-      <div id="work">
-        <Work />
-      </div>
-      <div id="help">
-        <Help />
-      </div>
-      <Link to="swiper" spy={true} smooth={true} duration={500}>
-        Back to Top
-      </Link>
+      <Story />
     </Layout>
   );
 }
