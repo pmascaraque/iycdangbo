@@ -3,11 +3,13 @@ import Layout from "../components/Layout";
 import { Dangbo, Work, Help } from "../components/page_components/about_texts";
 import Hero from "../components/Hero";
 import { Link } from "react-scroll";
+import Story from "../components/Story";
 
 function Index() {
   return (
     <Layout>
       <Hero />
+      <Story />
       <Link to="dangbo" spy={true} smooth={true} duration={500}>
         Dangbo
       </Link>
