@@ -1,7 +1,7 @@
 export default {
   cityName: "Dangbo",
   firstText:
-    "Dangbo es una localidad situada en la Región de Ouemé, al sur de Benín con una población de 77000 habitantes en una superficie de 340 kms cuadrados, con una estructura sanitaria deficitaria e insuficiente.",
+    "Dangbo es una ciudad del país de Benín, situado en África Occidental. Aunque esculpida por su hermoso paisaje y su exótica cocina, los benineses siguen sufriendo los efectos del poscolonialismo. La pobreza extrema asola a muchos países africanos con hambre, enfermedades, mortalidad infantil, inestabilidad y conflictos.",
   secondText: "",
   bgImageURL:
     "https://i.guim.co.uk/img/media/7f319bf65c7229ea6c17380e2bb89ff493a03998/0_548_8216_4929/master/8216.jpg?width=620&quality=85&auto=format&fit=max&s=f3060161b73b50f26eef6dbfa3af2c53",

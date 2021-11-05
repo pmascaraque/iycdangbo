@@ -10,21 +10,6 @@ function Index() {
     <Layout>
       <Hero />
       <Story />
-      <Link to="dangbo" spy={true} smooth={true} duration={500}>
-        Dangbo
-      </Link>
-      <div id="dangbo">
-        <Dangbo />
-      </div>
-      <div id="work">
-        <Work />
-      </div>
-      <div id="help">
-        <Help />
-      </div>
-      <Link to="swiper" spy={true} smooth={true} duration={500}>
-        Back to Top
-      </Link>
     </Layout>
   );
 }
