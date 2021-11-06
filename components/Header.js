@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import data from "../data/header";
+
 export default function Header() {
   return (
     <div className="h-16 absolute top-0 z-10 w-full px-2 flex justify-between md:place-items-center p-2 md:justify-between">
@@ -11,15 +12,15 @@ export default function Header() {
         <img src={data.menuIconURL} alt="Menu" className="w-8" />
       </button>
       <div className="hidden text-white text-md md:inline mr-4">
-        <a href="about" className="hover:bg-gray-50 hover:bg-opacity-30 p-3 mr-2 w-30">
+        <Link href="/" className="hover:bg-gray-50 hover:bg-opacity-30 p-3 mr-2 w-30">
           {data.buttons.about_us}
-        </a>
-        <a href="news" className="hover:bg-gray-50 hover:bg-opacity-30 p-3 mr-2 w-25">
+        </Link>
+        <Link href="/blog" className="hover:bg-gray-50 hover:bg-opacity-30 p-3 mr-2 w-25">
           {data.buttons.news}
-        </a>
-        <a href="donate" className="hover:bg-gray-50 hover:bg-opacity-30 p-3 mr-2 w-25">
+        </Link>
+        <Link href="/" className="hover:bg-gray-50 hover:bg-opacity-30 p-3 mr-2 w-25">
           {data.buttons.colaborate}
-        </a>
+        </Link>
       </div>
     </div>
   );
