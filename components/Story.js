@@ -14,7 +14,7 @@ function Story() {
         <img
           src={data.bgImageURL}
           alt={data.bgImageAlt}
-          className="h-screen opacity-50 object-cover w-screen object-center"
+          className="h-screen opacity-20 object-cover w-screen object-center"
         />
         <h1 className="hidden md:inline absolute bottom-12 right-12 text-6xl">{data.cityName}</h1>
       </div>
@@ -25,7 +25,7 @@ function Story() {
         <img
           src={data.bgDoctorsImageURL}
           alt={data.bgDoctorsImageAlt}
-          className="h-screen opacity-50 object-cover w-screen object-center"
+          className="h-screen opacity-20 object-cover w-screen object-center"
         />
         <h1 className="hidden md:inline absolute bottom-12 right-12 text-6xl">{data.cityName}</h1>
       </div>
