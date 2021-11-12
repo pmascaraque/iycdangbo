@@ -3,7 +3,6 @@ import Layout from "../components/Layout";
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
 import Stripe from "Stripe";
-import { createCheckoutSession } from "next-stripe/client";
 
 //price should be *100
 
@@ -16,7 +15,7 @@ function Donate() {
 
   useEffect(() => {
     // Create PaymentIntent as soon as the page loads
-    fetch("/create-payment-intent", {
+    fetch("http://localhost:3000/create-payment-intent", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ items: [{ id: "xl-tshirt" }] })

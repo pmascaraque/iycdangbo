@@ -3,7 +3,7 @@ const app = express();
 
 const stripe = require("stripe")(process.env.NEXT_PUBLIC_STRIPE_KEY);
 
-app.use(express.static("public"));
+app.use(express.static(""));
 app.use(express.json());
 
 app.post("/create-payment-intent", async (req, res) => {
@@ -21,4 +21,4 @@ app.post("/create-payment-intent", async (req, res) => {
   });
 });
 
-app.listen(4242, () => console.log("Node server listening on port 4242!"));
+app.listen(8000, () => console.log("Node server listening on port 8000!"));
