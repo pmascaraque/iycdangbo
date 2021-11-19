@@ -34,13 +34,13 @@ function Donate() {
   };
 
   return (
-    <div>
+    <Layout>
       {clientSecret && (
         <Elements options={options} stripe={stripePromise}>
           <CheckoutForm />
         </Elements>
       )}
-    </div>
+    </Layout>
   );
 }
 
