@@ -9,6 +9,6 @@ export default {
       text: "Quiénes somos",
       url: "/"
     },
-    { text: "Colabora", url: "/" }
+    { text: "Colabora", url: "/donate" }
   ]
 };
