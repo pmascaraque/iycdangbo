@@ -1,40 +1,19 @@
 import React, { useRef, useState, useEffect } from "react";
 import Layout from "../components/Layout";
 import { loadStripe } from "@stripe/stripe-js";
-import { Elements, CardElement, PaymentElement } from "@stripe/react-stripe-js";
+import { Elements } from "@stripe/react-stripe-js";
+import Stripe from "Stripe";
+
+//price should be *100
 
 import CheckoutForm from "../components/page_components/CheckoutForm";
-
-const express = require("express");
-const app = express();
 const stripePromise = loadStripe(
   "pk_test_51JnN3zHnwRpJy9ynon9s3tID7EGhAlZzukRevAvodhXUbQTokppHJEUCOllMdzFw1o8c3044fDzUBmmlVb1tQPcb00VJ0tig1T"
 );
 
-const options = {
-  // passing the client secret obtained in step 2
-  clientSecret: "{{CLIENT_SECRET}}",
-  // Fully customizable with appearance API.
-  appearance: {
-    /*...*/
-  }
-};
-
-app.get("/secret", async (req, res) => {
-  const intent = res.json({ client_secret: intent.client_secret }); // ... Fetch or create the PaymentIntent
-});
-
-(async () => {
-  const response = await fetch("/secret");
-  const { client_secret: clientSecret } = await response.json();
-  // Render the Payment Element using the clientSecret
-})();
-
 function Donate() {
-  const AmountRef = useRef();
-  ç;
+  const [clientSecret, setClientSecret] = useState("");
 
-  //SKETCHY 5555555555555555555555
   useEffect(() => {
     // Create PaymentIntent as soon as the page loads
     fetch("/create-payment-intent", {
@@ -53,17 +32,15 @@ function Donate() {
     clientSecret,
     appearance
   };
-  //UP TO HERE 5555555555555555555555
 
-  const [clientSecret, setClientSecret] = useState("");
   return (
-    <div className="Form">
+    <Layout>
       {clientSecret && (
         <Elements options={options} stripe={stripePromise}>
           <CheckoutForm />
         </Elements>
       )}
-    </div>
+    </Layout>
   );
 }
 
