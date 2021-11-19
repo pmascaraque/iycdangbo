@@ -1,4 +1,4 @@
-import data from "data/story";
+import data from "/data/story";
 
 function Story() {
   return (
