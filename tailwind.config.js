@@ -7,7 +7,7 @@ module.exports = {
       tiny: "320px",
       // => @media (min-width: 640px) { ... }
 
-      sm: "414px",
+      sm: "375px",
       // => @media (min-width: 640px) { ... }
 
       md: "768px",
@@ -24,7 +24,10 @@ module.exports = {
     }
   },
   variants: {
-    extend: {}
+    extend: {
+      borderStyle: ["responsive", "hover"],
+      borderWidth: ["responsive", "hover"]
+    }
   },
   plugins: []
 };
