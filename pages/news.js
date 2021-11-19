@@ -17,7 +17,14 @@ function News({ posts }) {
         <h1 className="text-xl mb-2">{element.data.title[0].text}</h1>
         <p className="mb-8 text-xs text-gray-800">{Intl.DateTimeFormat("de-DE").format(publicationDate)}</p>
         <p className="mb-5">{element.data.summary[0].text}</p>
-        <Link href={element.slugs[0]}>
+        <Link
+          href={{
+            pathname: "news/[id]",
+            query: {
+              id: element.slugs[0]
+            }
+          }}
+        >
           <a className="bg-black hover:bg-blue-800 text-white p-2">Leer más</a>
         </Link>
       </div>
