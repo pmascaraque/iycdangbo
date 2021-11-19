@@ -33,7 +33,7 @@ function News({ posts }) {
   return (
     <Layout>
       <h1 className="pt-20 w-min mx-auto text-4xl">{data.title}</h1>
-      <div className="pt-2">{postList}</div>
+      <div className="pt-2 pb-20">{postList}</div>
     </Layout>
   );
 }
