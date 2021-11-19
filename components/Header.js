@@ -15,7 +15,7 @@ export default function Header() {
         <Link href="/" className="hover:bg-gray-50 hover:bg-opacity-30 p-3 mr-2 w-30">
           {data.buttons.about_us}
         </Link>
-        <Link href="/blog" className="hover:bg-gray-50 hover:bg-opacity-30 p-3 mr-2 w-25">
+        <Link href="/news" className="hover:bg-gray-50 hover:bg-opacity-30 p-3 mr-2 w-25">
           {data.buttons.news}
         </Link>
         <Link href="/" className="hover:bg-gray-50 hover:bg-opacity-30 p-3 mr-2 w-25">
