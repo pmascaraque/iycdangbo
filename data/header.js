@@ -7,7 +7,7 @@ export default {
     { text: "Noticias", url: "/news" },
     {
       text: "Quiénes somos",
-      url: "/"
+      url: "/about"
     },
     { text: "Colabora", url: "/donate" }
   ]
