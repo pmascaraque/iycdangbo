@@ -1,4 +1,4 @@
-import Layout from "../../components/Layout";
+import Layout from "../../components/layout/Layout";
 import { client } from "../../config/prismic-configuration";
 import { RichText } from "prismic-reactjs";
 import Prismic from "prismic-javascript";

@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import data from "../data/header";
+import data from "/data/header";
 
 export default function Header() {
   return (
