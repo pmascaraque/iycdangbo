@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import data from "../data/news";
+import data from "/data/news";
 
 export default function News({ lastPosts }) {
   let postList = [];

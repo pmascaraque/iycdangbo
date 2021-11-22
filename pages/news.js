@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from "../components/Layout";
+import Layout from "../components/layout/Layout";
 import { client } from "../config/prismic-configuration";
 import Prismic from "prismic-javascript";
 import data from "../data/news";
