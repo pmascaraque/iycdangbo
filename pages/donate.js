@@ -1,8 +1,8 @@
 import React, { useRef, useState, useEffect } from "react";
-import Layout from "../components/layout/Layout";
+import Layout from "/components/layout/Layout";
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
-import CheckoutForm from "../components/donate/CheckoutForm";
+import CheckoutForm from "/components/donate/CheckoutForm";
 
 
 const stripePromise = loadStripe(
