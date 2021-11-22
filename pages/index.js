@@ -20,7 +20,6 @@ export default Index;
 
 export const getStaticProps = async () => {
   const lastPosts = await client.query(Prismic.Predicates.at("document.type", "post"), { pageSize: 3 });
-  console.log(lastPosts);
   return {
     props: {
       lastPosts

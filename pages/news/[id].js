@@ -20,7 +20,7 @@ const Post = ({ content, title, date }) => {
 };
 
 export const getStaticPaths = async () => {
-  const posts = await client.query(Prismic.Predicates.at("document.type", "post"));
+  const posts = await client.query(Prismic.Predicates.at("document.type", "entrada"));
   const pathNames = posts.results.map((post) => {
     return {
       params: {
@@ -36,7 +36,7 @@ export const getStaticPaths = async () => {
 };
 
 export const getStaticProps = async (context) => {
-  const posts = await client.query(Prismic.Predicates.at("document.type", "post"));
+  const posts = await client.query(Prismic.Predicates.at("document.type", "entrada"));
 
   const currentPost = posts.results.filter((post) => post.slugs[0] == context.params?.id)[0];
   let publicationDate = new Date(currentPost.first_publication_date);
