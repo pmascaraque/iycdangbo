@@ -13,7 +13,7 @@ function Aso() {
           className="absolute z-10 bottom-12 right-1/4 w-2/4 md:right-12 md:top-64 md:w-2/6 lg:w-4/12 "
           src={data.locationImageURL}
         />
-        <img src={data.imageURL} className="h-screen object-cover w-screen object-center" />
+        <img src={data.imageURL2} className="h-screen object-cover opacity-30 w-screen object-center" />
       </div>
     </div>
   );
