@@ -1,4 +1,5 @@
 import data from "/data/sponsors";
+import data2 from "/data/about";
 import React from "react";
 
 function Sponsors() {
@@ -10,10 +11,9 @@ function Sponsors() {
       </a>
     );
   });
-  console.log({ linksList });
   return (
-    <div className="h-screen w-full relative font-medium top-16 border-t-8 border-black">
-      <h1 className="relative top-8 left-1/3 text-6xl">Solidarios</h1>
+    <div className="pb-20 w-full relative font-medium top-16 border-t-8 border-black">
+      <h1 className="relative top-8 left-1/3 text-6xl">{data2.boldWord3}</h1>
       <div className="relative top-16 grid lg:grid-cols-6 md:grid-cols-4 sm:grid-cols-2 justify-items-center">{linksList}</div>
     </div>
   );
