@@ -10,6 +10,6 @@ export default {
   bgDoctorsImageURL:
     "https://ik.imagekit.io/300/0IyCDangboResources/Cirujanos_JS-39_pKLh_-17J.jpg?updatedAt=1636127145202",
   bgDoctorsImageAlt: "Doctors working",
-  locationImageURL: "https://ik.imagekit.io/300/0IyCDangboResources/8391afb6-83f8-46b3-813b-9a738afba587_1pwhyWX5xW.jpg?updatedAt=1636114732319",
+  locationImageURL: "https://ik.imagekit.io/300/0IyCDangboResources/d1dae451-a55e-41ea-a5b8-b99420310673_Gp-XPD7DvYK.png?updatedAt=1637599959485",
   locationImageAlt: "Benins Location"
 };

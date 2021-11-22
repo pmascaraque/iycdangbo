@@ -41,7 +41,7 @@ function News({ posts }) {
 export default News;
 
 export const getStaticProps = async () => {
-  const posts = await client.query(Prismic.Predicates.at("document.type", "post"));
+  const posts = await client.query(Prismic.Predicates.at("document.type", "entrada"));
   return {
     props: {
       posts
