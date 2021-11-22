@@ -11,5 +11,5 @@ export default {
     "https://ik.imagekit.io/300/0IyCDangboResources/Cirujanos_JS-39_pKLh_-17J.jpg?updatedAt=1636127145202",
   bgDoctorsImageAlt: "Doctors working",
   locationImageURL: "https://ik.imagekit.io/300/0IyCDangboResources/d1dae451-a55e-41ea-a5b8-b99420310673_Gp-XPD7DvYK.png?updatedAt=1637599959485",
-  locationImageAlt: "Location where is Benin"
+  locationImageAlt: "Benins Location"
 };
