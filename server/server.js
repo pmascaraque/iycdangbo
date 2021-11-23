@@ -1,5 +1,6 @@
 const express = require("express");
 const app = express();
+const cors = require("cors");
 
 const stripe = require("stripe")(
   "sk_test_51JnN3zHnwRpJy9ynJMJUpGBoT8fiyAQQFR3qKPos6NwAWZrGrRDAecr0KLNRLD6LTP47GrlkdIGVZjRYOOBJ9ixO00kCzNLlVp"
@@ -7,6 +8,7 @@ const stripe = require("stripe")(
 
 app.use(express.static("public"));
 app.use(express.json());
+app.use(cors({ origin: "*" })); //FOR DEVELOPMENT ONLY
 
 app.post("/create-payment-intent", async (req, res) => {
   const { items } = req.body;
