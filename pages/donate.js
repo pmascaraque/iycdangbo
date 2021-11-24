@@ -32,12 +32,15 @@ function Donate() {
 
   return (
     <Layout>
-        <p><br/><br/><br/><br/><br/><br/></p>
-        {clientSecret && (
-          <Elements options={options} stripe={stripePromise}>
-            <CheckoutForm />
-          </Elements>
-        )}
+      <div className="h-screen grid justify-items-center top-16 relative">
+        <div className="w-1/3 top-16 relative">
+          {clientSecret && (
+            <Elements options={options} stripe={stripePromise}>
+              <CheckoutForm />
+            </Elements>
+          )}
+        </div>
+      </div>
     </Layout>
   );
 }
