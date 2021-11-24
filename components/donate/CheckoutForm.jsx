@@ -72,12 +72,23 @@ export default function CheckoutForm() {
 
   return (
     <form onSubmit={handleSubmit}>
+      <div className="p-4 flex justify-center md:px-24 lg:px-48 xl:px-60">
+        <img src="https://ik.imagekit.io/manuelalferez/dangbo/credit_card_m-gwwEpAF.png" />
+      </div>
       <PaymentElement id="payment-element" />
-      <button className="bg-black hover:bg-blue-800 text-white p-2 mx-auto top relative top-6" disabled={isLoading || !stripe || !elements} id="submit">
+      <button
+        className="text-2xl bg-gray-800 hover:bg-green-300 hover:text-black text-white p-3 mt-6 flex mx-auto"
+        disabled={isLoading || !stripe || !elements}
+        id="submit"
+      >
         <span id="button-text">{isLoading ? <div className="spinner" id="spinner"></div> : "Donate"}</span>
       </button>
       {/* Show any error or success messages */}
-      {message && <div className="relative top-12" id="payment-message">{message}</div>}
+      {message && (
+        <div className="relative top-12" id="payment-message">
+          {message}
+        </div>
+      )}
     </form>
   );
 }
