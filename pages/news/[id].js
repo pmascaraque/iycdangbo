@@ -1,4 +1,5 @@
 import Layout from "../../components/layout/Layout";
+import Link from "next/link";
 import { client } from "../../config/prismic-configuration";
 import { RichText } from "prismic-reactjs";
 import Prismic from "prismic-javascript";
@@ -13,6 +14,9 @@ const Post = ({ content, title, date }) => {
           <div className="content">
             <RichText render={content} />
           </div>
+          <Link href="/news">
+            <a className="bg-black hover:bg-blue-800 text-white p-2">Volver</a>
+          </Link>
         </div>
       </div>
     </Layout>

@@ -8,7 +8,7 @@ function Story() {
           {data.firstText}
         </p>
         <img
-          className="absolute z-10 bottom-12 right-1/4 w-2/4 md:right-12 md:top-64 md:w-2/6 lg:w-4/12 "
+          className="absolute z-10 bottom-12 right-1/4 w-2/4 md:right-16 md:top-64 md:w-2/6 lg:w-3/12 "
           src={data.locationImageURL}
         />
         <img

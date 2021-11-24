@@ -6,7 +6,6 @@ export default function News({ lastPosts }) {
   let postList = [];
   lastPosts.results.map((element) => {
     let publicationDate = new Date(element.first_publication_date);
-    console.log("Element: ", JSON.stringify(element));
     postList.push(
       <div
         className="bg-white p-4 mt-2 mx-4 rounded-xl md:mr-2 md:w-10/12 lg:w-5/12 xl:w-3/12 border border-opacity-10 border-double border-black"
