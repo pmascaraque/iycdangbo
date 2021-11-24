@@ -11,11 +11,12 @@ app.use(express.json());
 app.use(cors({ origin: "*" })); //FOR DEVELOPMENT ONLY
 
 app.post("/create-payment-intent", async (req, res) => {
-  const { items } = req.body;
+  const { amount } = req.body;
+  console.log(amount);
 
   // Create a PaymentIntent with the order amount and currency
   const paymentIntent = await stripe.paymentIntents.create({
-    amount: 1099, //placeholder amount for testing only, must be *100
+    amount: 109, //placeholder amount for testing only, must be *100
     currency: "eur",
     automatic_payment_methods: {
       enabled: true
@@ -26,5 +27,4 @@ app.post("/create-payment-intent", async (req, res) => {
     clientSecret: paymentIntent.client_secret
   });
 });
-
 app.listen(4242, () => console.log("Node server listening on port 4242!"));

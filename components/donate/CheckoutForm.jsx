@@ -52,7 +52,7 @@ export default function CheckoutForm() {
       elements,
       confirmParams: {
         // Make sure to change this to your payment completion page
-        return_url: "http://localhost:3000"
+        return_url: "http://localhost:3000/donate"
       }
     });
 
@@ -71,13 +71,13 @@ export default function CheckoutForm() {
   };
 
   return (
-    <form id="payment-form" onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit}>
       <PaymentElement id="payment-element" />
       <button className="bg-black hover:bg-blue-800 text-white p-2 mx-auto top relative top-6" disabled={isLoading || !stripe || !elements} id="submit">
-        <span id="button-text">{isLoading ? <div className="spinner" id="spinner"></div> : "Pay now"}</span>
+        <span id="button-text">{isLoading ? <div className="spinner" id="spinner"></div> : "Donate"}</span>
       </button>
       {/* Show any error or success messages */}
-      {message && <div id="payment-message">{message}</div>}
+      {message && <div className="relative top-12" id="payment-message">{message}</div>}
     </form>
   );
 }

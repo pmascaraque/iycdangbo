@@ -34,11 +34,11 @@ function Donate() {
     <Layout>
       <div className="h-screen grid justify-items-center top-16 relative">
         <div className="w-1/3 top-16 relative">
-          {clientSecret && (
+          {clientSecret ? (
             <Elements options={options} stripe={stripePromise}>
               <CheckoutForm />
             </Elements>
-          )}
+          ) : "Loading"}
         </div>
       </div>
     </Layout>
