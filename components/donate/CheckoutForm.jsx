@@ -73,7 +73,7 @@ export default function CheckoutForm() {
   return (
     <form onSubmit={handleSubmit}>
       <div className="p-4 flex justify-center md:px-24 lg:px-48 xl:px-60">
-        <img src="https://ik.imagekit.io/manuelalferez/dangbo/credit_card_m-gwwEpAF.png" />
+        <img src="https://ik.imagekit.io/300/0IyCDangboResources/Component_1_aFEO7EeAy.png?updatedAt=1637828751624" />
       </div>
       <PaymentElement id="payment-element" />
       <button
