@@ -15,7 +15,7 @@ const Post = ({ content, title, date }) => {
             <RichText render={content} />
           </div>
           <Link href="/news">
-            <a className="bg-black hover:bg-blue-800 text-white p-2">Volver</a>
+            <a className="back-button">Volver</a>
           </Link>
         </div>
       </div>
