@@ -12,7 +12,7 @@
     <a href="https://github.com/manuelalferez/readme-template/wiki"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://iycdangbo.vercel.app/">Website</a>
+    <a href="https://iycdangbo-nine.vercel.app/">Website</a>
     ·
     <a href="https://github.com/pmascaraque/iycdangbo/issues">Report Bug</a>
     ·
