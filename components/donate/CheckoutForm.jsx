@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { PaymentElement, useStripe, useElements } from "@stripe/react-stripe-js";
 
 export default function CheckoutForm() {
   const stripe = useStripe();
   const elements = useElements();
+  const amountRef = useRef(20);
 
   const [message, setMessage] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
@@ -13,6 +14,7 @@ export default function CheckoutForm() {
       return;
     }
 
+    amountRef.current.value = 20;
     const clientSecret = new URLSearchParams(window.location.search).get("payment_intent_client_secret");
 
     if (!clientSecret) {
@@ -47,6 +49,17 @@ export default function CheckoutForm() {
     }
 
     setIsLoading(true);
+    
+    const finalAmount = amountRef.current.value * 100;
+
+      fetch("http://localhost:4242/update-payment-intent", {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(finalAmount) //maybe u can take this out
+      })
+        .then((res) => res.json())
+        .then((data) => console.log(data));
+
 
     const { error } = await stripe.confirmPayment({
       elements,
@@ -72,10 +85,16 @@ export default function CheckoutForm() {
 
   return (
     <form onSubmit={handleSubmit}>
+      <div className="flex justify-center m-2">
+        <p>Su importe</p>
+        <input className="ml-8 border-2 rounded" type="number" ref={amountRef}></input>
+      </div>
+
       <div className="p-4 flex justify-center md:px-24 lg:px-48 xl:px-60">
         <img src="https://ik.imagekit.io/manuelalferez/dangbo/credit_card_m-gwwEpAF.png" />
       </div>
       <PaymentElement id="payment-element" />
+
       <button
         className="text-2xl bg-gray-800 hover:bg-green-300 hover:text-black text-white p-3 mt-6 flex mx-auto"
         disabled={isLoading || !stripe || !elements}

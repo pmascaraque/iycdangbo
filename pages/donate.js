@@ -20,8 +20,8 @@ function Donate() {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ items: [{ id: "xl-tshirt" }] })
     })
-      .then((res) => res.json())
-      .then((data) => setClientSecret(data.clientSecret));
+    .then((res) => res.json())
+    .then((data) => setClientSecret(data.clientSecret));
   }, []);
 
   const appearance = {
