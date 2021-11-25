@@ -12,7 +12,7 @@
     <a href="https://github.com/manuelalferez/readme-template/wiki"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://iycdangbo.vercel.app/">Website</a>
+    <a href="https://iycdangbo-nine.vercel.app/">Website</a>
     ·
     <a href="https://github.com/pmascaraque/iycdangbo/issues">Report Bug</a>
     ·
@@ -49,9 +49,8 @@ The tools used for this project can be found here:
     <li><a href="https://nextjs.org/docs/getting-started">Next</a></li>
     <li><a href="https://figma.com">Figma</a></li>
     <li><a href="https://stripe.com">Stripe</a></li>
-    <li><a href="https://hexo.io/">Hexo</a></li>
-    <li><a href="https://swiperjs.com/">Swiper</a></li>
-    <li><a href="https://www.npmjs.com/package/react-scroll">React-Scroll</a></li>
+    <li><a href="https://https://tailwindcss.com/docs">TailwindsCSS</a></li>
+    <li><a href="https://https://prismic.io/docs/">PrismicIO</a></li>
   </ol>
 </details>
 
