@@ -42,6 +42,16 @@ export default function CheckoutForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    const finalAmount = amountRef.current.value * 100;
+
+    fetch("http://localhost:4242/update-payment-intent/", {
+      method: "PUT",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ finalAmount })
+    })
+      .then((res) => res.json())
+      .then((data) => console.log(data));
+
     if (!stripe || !elements) {
       // Stripe.js has not yet loaded.
       // Make sure to disable form submission until Stripe.js has loaded.
@@ -49,17 +59,6 @@ export default function CheckoutForm() {
     }
 
     setIsLoading(true);
-    
-    const finalAmount = amountRef.current.value * 100;
-
-      fetch("http://localhost:4242/update-payment-intent", {
-        method: "PUT",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(finalAmount) //maybe u can take this out
-      })
-        .then((res) => res.json())
-        .then((data) => console.log(data));
-
 
     const { error } = await stripe.confirmPayment({
       elements,

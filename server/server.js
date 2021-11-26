@@ -1,6 +1,6 @@
 const express = require("express");
-const app = express();
 const cors = require("cors");
+const app = express();
 
 const stripe = require("stripe")(
   "sk_test_51JnN3zHnwRpJy9ynJMJUpGBoT8fiyAQQFR3qKPos6NwAWZrGrRDAecr0KLNRLD6LTP47GrlkdIGVZjRYOOBJ9ixO00kCzNLlVp"
@@ -9,7 +9,7 @@ const stripe = require("stripe")(
 app.use(express.static("public"));
 app.use(express.json());
 app.use(cors()); //FOR DEVELOPMENT ONLY
-app.options('*', cors())
+app.options("*", cors());
 
 app.post("/create-payment-intent", async (req, res) => {
   // Create a PaymentIntent with the order amount and currency
@@ -21,21 +21,18 @@ app.post("/create-payment-intent", async (req, res) => {
     }
   });
 
+  //client secret visible on preview??
   res.send({
     clientSecret: paymentIntent.client_secret
   });
 });
 
-app.put("/update-payment-intent", async (req, res) => {
-  const amount = req.body;
-  console.log(amount);
-
-  res.set({
-    "Content-Type": "text/plain",
-    "Content-Length": "123",
-    ETag: "12345"
+app.put("/update-payment-intent/", async (req, res) => {
+  const paymentIntent = await stripe.paymentIntents.update("pi_3Jrgc9HnwRpJy9yn0OySn7xs", {
+    amount: req.body.finalAmount
   });
-  res.send(amount);
+  console.log(paymentIntent.amount);
+  res.send(String(req.body.finalAmount));
 });
 
 app.listen(4242, () => console.log("Node server listening on port 4242!"));
