@@ -4,7 +4,7 @@ import { PaymentElement, useStripe, useElements } from "@stripe/react-stripe-js"
 export default function CheckoutForm() {
   const stripe = useStripe();
   const elements = useElements();
-  const amountRef = useRef(20);
+  const amountRef = useRef(5);
 
   const [message, setMessage] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
@@ -14,7 +14,7 @@ export default function CheckoutForm() {
       return;
     }
 
-    amountRef.current.value = 20;
+    amountRef.current.value = 5;
     const clientSecret = new URLSearchParams(window.location.search).get("payment_intent_client_secret");
 
     if (!clientSecret) {
@@ -64,7 +64,7 @@ export default function CheckoutForm() {
       elements,
       confirmParams: {
         // Make sure to change this to your payment completion page
-        return_url: "http://localhost:3000/"
+        return_url: "http://localhost:3000/donate"
       }
     });
 
