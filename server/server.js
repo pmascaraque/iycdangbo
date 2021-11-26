@@ -21,6 +21,8 @@ app.post("/create-payment-intent", async (req, res) => {
     }
   });
 
+  piId = paymentIntent.id;
+  console.log(piId);
   //client secret visible on preview??
   res.send({
     clientSecret: paymentIntent.client_secret
@@ -28,9 +30,10 @@ app.post("/create-payment-intent", async (req, res) => {
 });
 
 app.put("/update-payment-intent/", async (req, res) => {
-  const paymentIntent = await stripe.paymentIntents.update("pi_3Jrgc9HnwRpJy9yn0OySn7xs", {
+  const paymentIntent = await stripe.paymentIntents.update(piId, {
     amount: req.body.finalAmount
   });
+
   console.log(paymentIntent.amount);
   res.send(String(req.body.finalAmount));
 });
