@@ -22,7 +22,6 @@ app.post("/create-payment-intent", async (req, res) => {
   });
 
   piId = paymentIntent.id;
-  console.log(piId);
   //client secret visible on preview??
   res.send({
     clientSecret: paymentIntent.client_secret
@@ -34,7 +33,6 @@ app.put("/update-payment-intent/", async (req, res) => {
     amount: req.body.finalAmount
   });
 
-  console.log(paymentIntent.amount);
   res.send(String(req.body.finalAmount));
 });
 
