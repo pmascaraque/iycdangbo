@@ -1,21 +1,33 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Layout from "/components/layout/Layout";
 import { client } from "/config/prismic-configuration";
 import Prismic from "prismic-javascript";
 import data from "/data/news";
 import Link from "next/link";
 import Pagination from "../components/news/Pagination";
+import { parse } from "postcss";
 
 const POSTS_PER_PAGE = 1;
 
 function News({ posts }) {
   const [currentPage, setCurrentPage] = useState(0);
-  const [currentPosts, setCurrentPosts] = useState("");
   const maxPages = Math.ceil(posts.results.length / POSTS_PER_PAGE);
+
+  useEffect(() => {});
 
   function buttonClicked(e) {
     e.preventDefault();
-    setCurrentPage(e.target.id);
+    if (e.target.id === "back") {
+      if (parseInt(currentPage) != 0) {
+        setCurrentPage(parseInt(currentPage) - parseInt(1));
+      }
+    } else if (e.target.id === "next") {
+      if (parseInt(currentPage) != parseInt(maxPages) - parseInt(1)) {
+        setCurrentPage(parseInt(currentPage) + 1);
+      }
+    } else {
+      setCurrentPage(e.target.id);
+    }
   }
 
   let postList = [];
@@ -52,7 +64,8 @@ function News({ posts }) {
       <h1 className="pt-20 w-min mx-auto text-4xl">{data.title}</h1>
       <div className="pt-2 pb-10">{postList}</div>
       <div className="pb-20">
-        <Pagination currentPage={currentPage} maxPages={maxPages} buttonClicked={buttonClicked} />
+        <div>Current Page: {currentPage}</div>
+        <Pagination currentPage={parseInt(currentPage)} maxPages={parseInt(maxPages)} buttonClicked={buttonClicked} />
       </div>
     </Layout>
   );
