@@ -14,7 +14,7 @@ html {
   @apply text-blue-800 font-medium hover:border-b-2 hover:border-gray-200;
 }
 
-.post .back-button {
+.back-button {
   @apply bg-black hover:bg-blue-800 text-white p-2 flex mx-auto w-min;
 }
 
