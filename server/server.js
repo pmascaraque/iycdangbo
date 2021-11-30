@@ -13,6 +13,16 @@ app.options("*", cors());
 
 const priceId = '{{PRICE_ID}}';
 
+app.post('https://localhost:3000/create-customer-portal-session', async (req, res) => {
+  // Authenticate your user.
+  const session = await stripe.billingPortal.sessions.create({
+    customer: '{{ CUSTOMER_ID }}',
+    return_url: 'https://localhost:3000/privacy',
+  });
+
+  res.redirect(session.url);
+});
+
 const session = await stripe.checkout.sessions.create({
   mode: 'subscription',
   line_items: [
@@ -26,7 +36,7 @@ const session = await stripe.checkout.sessions.create({
   // the actual Session ID is returned in the query parameter when your customer
   // is redirected to the success page.
   success_url: 'https://localhost:3000/thanks/',
-  cancel_url: 'https://example.com/donate.js',
+  cancel_url: 'https://localhost:3000/donate.js',
 });
 
 app.post("/webhook", async (req, res) => {

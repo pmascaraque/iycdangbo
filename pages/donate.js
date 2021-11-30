@@ -23,7 +23,7 @@ function Donate() {
       .then((data) => setClientSecret(data.clientSecret));
   }, []);
 
-//client secret visible????
+  //client secret visible????
 
   const appearance = {
     theme: "stripe"
@@ -37,6 +37,9 @@ function Donate() {
     <Layout>
       <div className=" w-screen mb-10">
         <h1 className="pt-24 w-max mx-auto text-3xl pb-8">{data.title}</h1>
+        <form method="POST" action="/create-customer-portal-session">
+          <button type="submit">Manage billing</button>
+        </form>
         <div className="w-11/12 md:w-8/12 mx-auto p-2 rounded-md shadow-lg border-2 border-green-200 pb-14">
           {clientSecret ? (
             <Elements options={options} stripe={stripePromise}>
