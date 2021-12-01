@@ -4,7 +4,7 @@ function Dangbo() {
   let paragraphs = [];
   data.dangbo.text.map((item) => {
     paragraphs.push(
-      <p className="mb-4 tiny:text-base sm:text-xl p-4 top-12 md:text-3xl lg:leading-normal lg:text-3xl 2xl:text-5xl 2xl:leading-normal lg:px-24">
+      <p className="mb-4 tiny:text-base sm:text-xl p-4 top-12 md:text-2xl lg:leading-normal 2xl:text-3xl 2xl:leading-normal lg:px-24">
         {item}
       </p>
     );

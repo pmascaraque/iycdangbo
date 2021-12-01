@@ -12,22 +12,29 @@ export default {
   },
   iyc: [
     "Fundada en febrero de 2014, fue inscrita en el Registro Nacional de Asociaciones del Ministerio del Interior en Mayo de 2014 y en el Registro de Organizaciones No Gubernamentales de Desarrollo con el Nº 2833 el 22 de enero de 2016. La Asociación Infancia y Cirugía en Dangbo está integrada por un grupo de Cirujanos, Anestesistas, Ginecólogos, Pediatras y Médicos de Familia y Enfermeras de Quirófano, Estudiantes de Medicina de 6ª Curso, Socios y Voluntarios con el objetivo de operar pacientes en el Hospital de Albergue del Amor Redentor en la localidad de Dangbo, región de Ouemé, en la República de Benín.",
-    "Nuestra intención es complementar la actividad de los Sanitarios locales, muy escasos en número ante la gran demanda de cirugía que existe en el País"
+    "Nuestra intención es complementar la actividad de los Sanitarios locales, muy escasos en número ante la gran demanda de cirugía que existe en el País."
   ],
-  association: {
-    registration: [
-      "NIF: G87030359",
-      "Inscripción Registro: GRUPO1, SECCIÓN 1ª",
-      "Número nacional 605499, el 27/05/2014"
-    ],
-    location: "Carlos Picabea 1 28250 Torrelodones Madrid",
-    phone: "+34 646 11 96 98",
-    email: "asociacioncirugiaendangbo@gmail.com",
-    team: [
-      "Presidente: Dr. Jorge Parise Methol",
-      "Vicepresidente: Padre Martín Chognika",
-      "Secretaria: Dra. Itziar Tranche Álvarez-Cagigas",
-      "Tesorero: Dr. Carlos Ortiz Johansson"
-    ]
-  }
+  association: [
+    {
+      title: "Registro",
+      list: ["NIF: G87030359", "Inscripción Registro: GRUPO1, SECCIÓN 1ª", "Número nacional 605499, el 27/05/2014"]
+    },
+    {
+      title: "Contacto",
+      list: [
+        "Localización: Carlos Picabea 1 28250 Torrelodones Madrid",
+        "Teléfono: +34 646 11 96 98",
+        "Correo: asociacioncirugiaendangbo@gmail.com"
+      ]
+    },
+    {
+      title: "Junta Directiva",
+      list: [
+        "Presidente: Dr. Jorge Parise Methol",
+        "Vicepresidente: Padre Martín Chognika",
+        "Secretaria: Dra. Itziar Tranche Álvarez-Cagigas",
+        "Tesorero: Dr. Carlos Ortiz Johansson"
+      ]
+    }
+  ]
 };
