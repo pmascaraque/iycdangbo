@@ -8,8 +8,8 @@ export default function Extra() {
       list.push(<p>{listItem}</p>);
     });
     elements.push(
-      <div className="mx-2 pt-4">
-        <h1 className="text-md">{item.title}</h1>
+      <div className="mx-2 pt-4 mb-2">
+        <h1 className="text-md mb-2">{item.title}</h1>
         <div className="flex flex-col text-xs text-gray-700">{list}</div>
       </div>
     );

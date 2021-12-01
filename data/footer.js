@@ -13,9 +13,7 @@ export default [
   {
     title: "Conócenos",
     links: [
-      { name: "Quiénes somos", URL: "http://localhost:3000/" },
-      { name: "El equipo", URL: "http://localhost:3000/" },
-      { name: "Sobre nosotros", URL: "http://localhost:3000/" },
+      { name: "Quiénes somos", URL: "/about" },
       { name: "Galería", URL: "http://localhost:3000/" }
     ]
   },
