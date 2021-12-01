@@ -36,14 +36,15 @@ const session = await stripe.checkout.sessions.create({
   // the actual Session ID is returned in the query parameter when your customer
   // is redirected to the success page.
   success_url: 'https://localhost:3000/thanks/',
-  cancel_url: 'https://localhost:3000/donate.js',
+  cancel_url: 'https://localhost:3000/donate',
 });
 
 app.post("/webhook", async (req, res) => {
   let data;
   let eventType;
   // Check if webhook signing is configured.
-  const webhookSecret = {{'STRIPE_WEBHOOK_SECRET'}}
+  const webhookSecret = { 'STRIPE_WEBHOOK_SECRET':
+
   if (webhookSecret) {
     // Retrieve the event by verifying the signature using the raw body and secret.
     let event;
@@ -70,23 +71,23 @@ app.post("/webhook", async (req, res) => {
   }
 
   switch (eventType) {
-      case 'checkout.session.completed':
-        // Payment is successful and the subscription is created.
-        // You should provision the subscription and save the customer ID to your database.
-        break;
-      case 'invoice.paid':
-        // Continue to provision the subscription as payments continue to be made.
-        // Store the status in your database and check when a user accesses your service.
-        // This approach helps you avoid hitting rate limits.
-        break;
-      case 'invoice.payment_failed':
-        // The payment failed or the customer does not have a valid payment method.
-        // The subscription becomes past_due. Notify your customer and send them to the
-        // customer portal to update their payment information.
-        break;
-      default:
-      // Unhandled event type
-    }
+    case 'checkout.session.completed':
+      // Payment is successful and the subscription is created.
+      // You should provision the subscription and save the customer ID to your database.
+      break;
+    case 'invoice.paid':
+      // Continue to provision the subscription as payments continue to be made.
+      // Store the status in your database and check when a user accesses your service.
+      // This approach helps you avoid hitting rate limits.
+      break;
+    case 'invoice.payment_failed':
+      // The payment failed or the customer does not have a valid payment method.
+      // The subscription becomes past_due. Notify your customer and send them to the
+      // customer portal to update their payment information.
+      break;
+    default:
+    // Unhandled event type
+  }
 
   res.sendStatus(200);
 });
