@@ -18,6 +18,13 @@ function Terms() {
       </div>
     </Layout>
   );
+
+
+
+
+
+
+  
 }
 
 export default Terms;

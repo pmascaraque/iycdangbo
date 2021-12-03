@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from "react";
+  import React, { useRef, useState, useEffect } from "react";
 import Layout from "/components/layout/Layout";
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
