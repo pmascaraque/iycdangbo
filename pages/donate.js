@@ -1,4 +1,4 @@
-  import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import Layout from "/components/layout/Layout";
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
@@ -15,7 +15,7 @@ function Donate() {
 
   useEffect(() => {
     // Create PaymentIntent as soon as the page loads
-    fetch("http://localhost:4242/create-payment-intent", {
+    fetch(`${process.env.SERVER_URL}/create-payment-intent`, {
       method: "POST",
       headers: { "Content-Type": "application/json" }
     })
@@ -33,11 +33,18 @@ function Donate() {
     appearance
   };
 
+  const submit = async (e) => {
+    fetch(`${process.env.SERVER_URL}/create-customer-portal-session/`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" }
+    });
+  };
+
   return (
     <Layout>
       <div className=" w-screen mb-10">
         <h1 className="pt-24 w-max mx-auto text-3xl pb-8">{data.title}</h1>
-        <form method="POST" action="/create-customer-portal-session">
+        <form onSubmit={submit} method="POST" action="/create-customer-portal-session">
           <button type="submit">Manage billing</button>
         </form>
         <div className="w-11/12 md:w-8/12 mx-auto p-2 rounded-md shadow-lg border-2 border-green-200 pb-14">

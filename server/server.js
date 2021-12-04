@@ -2,6 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const app = express();
 
+
 const stripe = require("stripe")(
   "sk_test_51JnN3zHnwRpJy9ynJMJUpGBoT8fiyAQQFR3qKPos6NwAWZrGrRDAecr0KLNRLD6LTP47GrlkdIGVZjRYOOBJ9ixO00kCzNLlVp"
 );
@@ -12,6 +13,16 @@ app.use(cors()); //FOR DEVELOPMENT ONLY
 app.options("*", cors());
 
 // const priceId = '{{PRICE_ID}}';
+
+app.post('/create-customer-portal-session', async (req, res) => {
+  // Authenticate your user.
+  const session = await stripe.billingPortal.sessions.create({
+    customer: '{{ CUSTOMER_ID }}',
+    return_url: 'http://localhost:3000/donate',
+  });
+
+  res.redirect(session.url);
+});
 
 const session = stripe.checkout.sessions.create({
   mode: "subscription",
@@ -29,7 +40,7 @@ const session = stripe.checkout.sessions.create({
   cancel_url: "https://localhost:3000/donate/"
 });
 
-const YOUR_DOMAIN = "http://localhost:";
+const YOUR_DOMAIN = "http://localhost:4242";
 
 app.post("/create-checkout-session", async (req, res) => {
   const prices = await stripe.prices.list({
