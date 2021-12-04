@@ -44,7 +44,7 @@ export default function CheckoutForm() {
 
     const finalAmount = amountRef.current.value * 100;
 
-    fetch(`${process.env.SERVER_URL}/update-payment-intent/`, {
+    fetch(`${process.env.NEXT_PUBLIC_SERVER_URL}/update-payment-intent/`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ finalAmount })

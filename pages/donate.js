@@ -15,7 +15,7 @@ function Donate() {
 
   useEffect(() => {
     // Create PaymentIntent as soon as the page loads
-    fetch(`${process.env.SERVER_URL}/create-payment-intent`, {
+    fetch(`${process.env.NEXT_PUBLIC_SERVER_URL}/create-payment-intent`, {
       method: "POST",
       headers: { "Content-Type": "application/json" }
     })
@@ -34,7 +34,7 @@ function Donate() {
   };
 
   const submit = async (e) => {
-    fetch(`${process.env.SERVER_URL}/create-customer-portal-session/`, {
+    fetch(`${process.env.NEXT_PUBLIC_SERVER_URL}/create-customer-portal-session/`, {
       method: "POST",
       headers: { "Content-Type": "application/json" }
     });
