@@ -11,17 +11,25 @@ const stripePromise = loadStripe(
 );
 //price should be *100
 function Donate() {
-  const [clientSecret, setClientSecret] = useState("");
+  const clientSecret = 'pi_3K2vj2HnwRpJy9yn0hl8isXp_secret_D6uXO75Tzxr7V8Zc07yIBPKcr';
 
-  useEffect(() => {
+  // useEffect(() => {
+
+  // }, []);
+
+  const handleCustomerPortal = () => {
     // Create PaymentIntent as soon as the page loads
-    fetch("http://localhost:4242/create-payment-intent", {
+    fetch(`${process.env.NEXT_PUBLIC_SERVER_URL}/create-customer-portal-session/`, {
       method: "POST",
-      headers: { "Content-Type": "application/json" }
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({clientId: 'cus_KiN5p2rCu4kPU5'})
     })
       .then((res) => res.json())
-      .then((data) => setClientSecret(data.clientSecret));
-  }, []);
+      .then((session) => {
+        console.log('session', session);
+        window.open(session.url);
+      });
+  };
 
   //client secret visible????
 
@@ -37,9 +45,7 @@ function Donate() {
     <Layout>
       <div className=" w-screen mb-10">
         <h1 className="pt-24 w-max mx-auto text-3xl pb-8">{data.title}</h1>
-        <form method="POST" action="/create-customer-portal-session">
-          <button type="submit">Manage billing</button>
-        </form>
+        <button onClick={handleCustomerPortal} type="button">Manage billing</button>
         <div className="w-11/12 md:w-8/12 mx-auto p-2 rounded-md shadow-lg border-2 border-green-200 pb-14">
           {clientSecret ? (
             <Elements options={options} stripe={stripePromise}>
