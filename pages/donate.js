@@ -41,6 +41,13 @@ function Donate() { //NEED MYSQL DB TO STORE CLIENT SECRET
     appearance
   };
 
+  const submit = async (e) => {
+    fetch(`${process.env.NEXT_PUBLIC_SERVER_URL}/create-customer-portal-session/`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" }
+    });
+  };
+
   return (
     <Layout>
       <div className=" w-screen mb-10">

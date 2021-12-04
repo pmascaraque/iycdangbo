@@ -74,7 +74,7 @@ app.post('/create-checkout-session', async (req, res) => {
 
 app.post('/create-customer-portal-session/', async (req, res) => {
   try {
-    console.log('🚀 > clientSecret', req.body.clientId)
+    console.log('ЁЯЪА > clientSecret', req.body.clientId)
     // Authenticate your user.
     const session = await stripe.billingPortal.sessions.create({
       customer: req.body.clientId,
@@ -109,7 +109,7 @@ app.post(
           endpointSecret
         );
       } catch (err) {
-        console.log(`⚠️  Webhook signature verification failed.`, err.message);
+        console.log(`тЪая╕П  Webhook signature verification failed.`, err.message);
         return response.sendStatus(400);
       }
     }
