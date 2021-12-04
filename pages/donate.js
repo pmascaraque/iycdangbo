@@ -10,7 +10,7 @@ const stripePromise = loadStripe(
   "pk_test_51JnN3zHnwRpJy9ynon9s3tID7EGhAlZzukRevAvodhXUbQTokppHJEUCOllMdzFw1o8c3044fDzUBmmlVb1tQPcb00VJ0tig1T"
 );
 //price should be *100
-function Donate() {
+function Donate() { //NEED MYSQL DB TO STORE CLIENT SECRET
   const clientSecret = 'pi_3K2vj2HnwRpJy9yn0hl8isXp_secret_D6uXO75Tzxr7V8Zc07yIBPKcr';
 
   // useEffect(() => {
