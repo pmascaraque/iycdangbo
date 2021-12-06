@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(cors()); //FOR DEVELOPMENT ONLY
 app.options("*", cors());
 
-// const priceId = '{{PRICE_ID}}';
+// const priceId = '{{PRICE_ID}}' ??
 
 const session = stripe.checkout.sessions.create({
   mode: 'subscription',
@@ -24,7 +24,7 @@ const session = stripe.checkout.sessions.create({
   ],
   // {CHECKOUT_SESSION_ID} is a string literal; do not change it!
   // the actual Session ID is returned in the query parameter when your customer
-  // is redirected to the success page.
+  // is redirected to the success page. Fix these:
   success_url: 'https://localhost:3000/thanks/',
   cancel_url: 'https://example.com/donate.js',
 });
