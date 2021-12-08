@@ -35,7 +35,7 @@
 
 ## Description
 
-Website repository for the website of the non-profit association "Infancia y Cirujia en Dangbo". With this website, we aim to bring much needed attention and funding to the peoples of Benin. 
+Website repository of the non-profit association "Infancia y Cirujia en Dangbo". With this website, we aim to bring much needed attention and funding to the peoples of Benin. 
 
 ## Technology
 
