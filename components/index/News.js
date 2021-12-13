@@ -22,17 +22,17 @@ export default function News({ lastPosts }) {
             }
           }}
         >
-          <a className="bg-black hover:bg-blue-800 text-white p-2">Leer más</a>
+          <a className="bg-redy hover:bg-opacity-70 text-white p-2">Leer más</a>
         </Link>
       </div>
     );
   });
   return (
-    <div className="border-t-8 border-maroon pb-10 flex flex-col">
+    <div className="border-t-8 border-maroon hover:bg-opacity-70 pb-10 flex flex-col">
       <h1 className="pt-10 w-min text-4xl mx-auto">{data.title}</h1>
       <div className="pt-2 pb-10 md:flex md:justify-center md:flex-wrap md:px-12">{postList}</div>
       <Link href="/news">
-        <a className="bg-black hover:bg-blue-800 text-white p-2 mx-auto">Más noticias</a>
+        <a className="bg-redy hover:bg-opacity-70 text-white p-2 mx-auto">Más noticias</a>
       </Link>
     </div>
   );

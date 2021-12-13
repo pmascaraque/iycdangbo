@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         maroon: "#582C4D",
         peach: "#ece2d0",
+        redy: "#a26769"
       }
     },
     screens: {
