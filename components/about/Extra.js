@@ -16,7 +16,7 @@ export default function Extra() {
   });
 
   return (
-    <div className="p-4 pb-10 border-t-8 border-black md:flex md:justify-around mf:flex-wrap lg:text-2xl lg:px-32 2xl:px-96 2xl:text-3xl">
+    <div className="p-4 pb-10 border-t-8 border-maroon md:flex md:justify-around mf:flex-wrap lg:text-2xl lg:px-32 2xl:px-96 2xl:text-3xl">
       {elements}
     </div>
   );

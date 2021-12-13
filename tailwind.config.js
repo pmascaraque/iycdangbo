@@ -2,7 +2,11 @@ module.exports = {
   purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        maroon: "#582C4D",
+      }
+    },
     screens: {
       tiny: "320px",
       // => @media (min-width: 640px) { ... }
