@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       colors: {
         maroon: "#582C4D",
+        peach: "#ece2d0",
       }
     },
     screens: {

@@ -24,12 +24,9 @@ function News({ posts }) {
     let publicationDate = new Date(posts.results[i].first_publication_date);
     postList.push(
       <div
-        className="bg-white p-4 mt-2 mx-4 rounded-xl border border-opacity-10 border-double border-black md:w-9/12 md:mx-auto lg:w-8/12 xl:w-7/12"
+        className="bg-white p-4 mt-2 mx-4 rounded-xl border border-graay md:w-9/12 md:mx-auto lg:w-8/12 xl:w-7/12 hover:bg-peach"
         key={posts.results[i].id}
       >
-        <h1 className="text-xl mb-2">{posts.results[i].data.title[0].text}</h1>
-        <p className="mb-8 text-xs text-gray-800">{Intl.DateTimeFormat("de-DE").format(publicationDate)}</p>
-        <p className="mb-5">{posts.results[i].data.summary[0].text}</p>
         <Link
           href={{
             pathname: "news/[id]",
@@ -38,7 +35,11 @@ function News({ posts }) {
             }
           }}
         >
-          <a className="bg-black hover:bg-blue-800 text-white p-2">Leer más</a>
+          <a>
+            <h1 className="text-xl mb-2 text-maroon font-bold">{posts.results[i].data.title[0].text}</h1>
+            <p className="mb-8 text-xs text-maroon">{Intl.DateTimeFormat("de-DE").format(publicationDate)}</p>
+            <p className="mb-5 ">{posts.results[i].data.summary[0].text}</p>
+          </a>
         </Link>
       </div>
     );
@@ -46,7 +47,7 @@ function News({ posts }) {
 
   return (
     <Layout>
-      <h1 className="pt-20 w-min mx-auto text-4xl">{data.title}</h1>
+      <h1 className="pt-20 w-min mx-auto text-4xl text-maroon">{data.title}</h1>
       <div className="pt-2 pb-10">{postList}</div>
       <div className="pb-20">
         <Pagination currentPage={parseInt(currentPage)} maxPages={parseInt(maxPages)} paginate={paginate} />
