@@ -5,7 +5,7 @@ export default function Extra() {
   data.association.forEach((item) => {
     let list = [];
     item.list.forEach((listItem) => {
-      list.push(<p>{listItem}</p>);
+      list.push(<p className="text-lg">{listItem}</p>);
     });
     elements.push(
       <div className="mx-2 pt-4 mb-2">
