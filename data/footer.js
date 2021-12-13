@@ -14,14 +14,15 @@ export default [
     title: "Conócenos",
     links: [
       { name: "Quiénes somos", URL: "/about" },
-      { name: "Galería", URL: "http://localhost:3000/" }
+      { name: "Privacidad", URL: "https://www.termsfeed.com/live/58a43746-7fd1-4d32-b514-f8ff2e46c3b7" },
+      { name: "Términos", URL: "https://www.termsfeed.com/live/6dc40f23-bd0e-43f8-b19e-c5fbc3becadd/" }
     ]
   },
   {
     title: "Actualidad",
     links: [
-      { name: "Noticias", URL: "http://localhost:3000/" },
-      { name: "Sobre nosotros", URL: "http://localhost:3000/" }
+      { name: "Noticias", URL: "/news" },
+      { name: "Sobre nosotros", URL: "/about" }
     ]
   }
 ];

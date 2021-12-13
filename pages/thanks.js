@@ -11,7 +11,7 @@ function Thanks() {
   return (
     <Layout>
       <div className="h-screen w-full relative font-medium top-16 border-t-4 border-black">
-        <div className="flex flex-col relative items-center md:mt-52 z-10 relative text-white md:h-screen">
+        <div className="flex flex-col items-center md:mt-52 z-10 relative text-white md:h-screen">
           <h1 className="mt-6 text-4xl md:text-6xl">{data.title}</h1>
           <p className="text-center	mt-4 text-xl md:text-2xl px-2">{data.text}</p>
           <Link href="/">
