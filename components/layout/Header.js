@@ -15,10 +15,13 @@ export default function Header() {
         {data.buttons.map((button) => {
           return (
             <Link href={button.url}>
-              <a className="hover:bg-gray-300 hover:bg-opacity-30 mr-4 p-2 w-max"> {button.text}</a>
+              <a className="hover:bg-maroon hover:bg-opacity-60 mr-4 p-2 w-max"> {button.text}</a>
             </Link>
           );
         })}
+        <Link href={data.donate.url}>
+          <a className="hover:bg-opacity-70 bg-maroon mr-4 p-2 pr-5 w-max text-white">{data.donate.text}</a>
+        </Link>
       </div>
     </div>
   );

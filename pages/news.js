@@ -24,7 +24,7 @@ function News({ posts }) {
     let publicationDate = new Date(posts.results[i].first_publication_date);
     postList.push(
       <div
-        className="bg-white p-4 mt-2 mx-4 rounded-xl border border-graay md:w-9/12 md:mx-auto lg:w-8/12 xl:w-7/12 hover:bg-peach"
+        className="bg-white p-4 mt-2 mx-4 rounded-xl border border-graay md:w-9/12 md:mx-auto lg:w-8/12 xl:w-7/12 hover:bg-graay"
         key={posts.results[i].id}
       >
         <Link

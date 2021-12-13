@@ -8,7 +8,7 @@ export default {
       text: "Quiénes somos",
       url: "/about"
     },
-    { text: "Noticias", url: "/news" },
-    { text: "❤️ Colabora", url: "/donate" }
-  ]
+    { text: "Noticias", url: "/news" }
+  ],
+  donate: { text: "❤️ Colabora", url: "/donate" }
 };

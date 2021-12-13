@@ -15,7 +15,7 @@ function Pagination({ currentPage, maxPages, paginate }) {
       pagesEnum.push(
         <button
           className={` m-2 h-8 w-8 rounded-full  ${
-            currentPage == i ? "text-white bg-blue-800" : "text-white bg-black"
+            currentPage == i ? "text-white bg-maroon" : "text-white bg-black"
           }`}
           key={i}
           id={i}
