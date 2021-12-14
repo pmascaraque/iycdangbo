@@ -13,6 +13,6 @@ export default {
   donate: {
     text: "Colabora",
     url: "/donate",
-    heart: "https://ik.imagekit.io/manuelalferez/dangbo/heart_0ntMyyZnR.svg?updatedAt=1639470613405"
+    heart: "https://ik.imagekit.io/300/0IyCDangboResources/red-heart_nE6tP10qN.svg?updatedAt=1639428718124"
   }
 };
