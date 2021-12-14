@@ -5,12 +5,12 @@ export default function Extra() {
   data.association.forEach((item) => {
     let list = [];
     item.list.forEach((listItem) => {
-      list.push(<p className="text-lg">{listItem}</p>);
+      list.push(<p>{listItem}</p>);
     });
     elements.push(
-      <div className="mx-2 pt-4 mb-2">
-        <h1 className="text-md mb-2">{item.title}</h1>
-        <div className="flex flex-col text-xs text-gray-700">{list}</div>
+      <div className="mx-2 pt-4">
+        <h1 className="text-md md:text-lg font-display text-maroon font-bold">{item.title}</h1>
+        <div className="flex flex-col text-xs md:text font-body text-redy">{list}</div>
       </div>
     );
   });
