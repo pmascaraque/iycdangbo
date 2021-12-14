@@ -4,7 +4,7 @@ import data from "/data/header";
 
 export default function Header() {
   return (
-    <div className="h-16 absolute bg-white top-0 z-10 w-full px-2 flex justify-between md:place-items-center p-2 md:justify-between">
+    <div className="h-16 absolute bg-white top-0 z-10 w-full px-2 flex justify-between md:place-items-center p-2 md:justify-between font-display">
       <a className="flex place-items-center pt-4" href="/">
         <img src={data.logoURL} className="w-28 md:ml-2" />
       </a>

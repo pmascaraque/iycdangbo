@@ -20,9 +20,9 @@ export default function News({ lastPosts }) {
           }}
         >
           <div className="">
-            <h1 className="text-maroon text-xl mb-2 font-bold">{element.data.title[0].text}</h1>
-            <p className="mb-8 text-xs text-maroon">{Intl.DateTimeFormat("de-DE").format(publicationDate)}</p>
-            <p className="mb-2 text-redy font-light">{element.data.summary[0].text}</p>
+            <h1 className="text-maroon text-xl mb-2 font-bold font-display">{element.data.title[0].text}</h1>
+            <p className="mb-8 text-xs text-maroon font-body">{Intl.DateTimeFormat("de-DE").format(publicationDate)}</p>
+            <p className="mb-2 text-redy font-body">{element.data.summary[0].text}</p>
           </div>
         </Link>
       </div>
@@ -30,10 +30,12 @@ export default function News({ lastPosts }) {
   });
   return (
     <div className="border-t-8 border-maroon hover:bg-opacity-70 pb-10 flex flex-col">
-      <h1 className="pt-10 w-min text-4xl mx-auto text-maroon">{data.title}</h1>
-      <div className="pt-2 pb-10 md:flex md:justify-center md:flex-wrap md:px-12">{postList}</div>
+      <h1 className="pt-10 w-min text-4xl mx-auto text-maroon font-display">{data.title}</h1>
+      <div className="pt-2 pb-10 md:flex md:justify-center md:flex-wrap md:px-12 ">{postList}</div>
       <Link href="/news">
-        <a className="bg-maroon hover:bg-peach hover:text-maroon text-peach p-2 mx-auto rounded">Más noticias</a>
+        <a className="bg-maroon hover:bg-peach hover:text-maroon text-peach p-2 mx-auto rounded font-body">
+          Más noticias
+        </a>
       </Link>
     </div>
   );

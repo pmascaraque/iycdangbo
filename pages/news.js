@@ -36,9 +36,9 @@ function News({ posts }) {
           }}
         >
           <a>
-            <h1 className="text-xl mb-2 text-maroon font-bold">{posts.results[i].data.title[0].text}</h1>
-            <p className="mb-8 text-xs text-maroon">{Intl.DateTimeFormat("de-DE").format(publicationDate)}</p>
-            <p className="mb-5 text-redy font-light">{posts.results[i].data.summary[0].text}</p>
+            <h1 className="text-xl mb-2 text-maroon font-bold font-display">{posts.results[i].data.title[0].text}</h1>
+            <p className="mb-8 text-xs text-maroon font-body">{Intl.DateTimeFormat("de-DE").format(publicationDate)}</p>
+            <p className="mb-5 text-redy font-body">{posts.results[i].data.summary[0].text}</p>
           </a>
         </Link>
       </div>
@@ -47,7 +47,7 @@ function News({ posts }) {
 
   return (
     <Layout>
-      <h1 className="pt-20 w-min mx-auto text-4xl text-maroon">{data.title}</h1>
+      <h1 className="pt-20 w-min mx-auto text-4xl text-maroon font-display">{data.title}</h1>
       <div className="pt-2 pb-10">{postList}</div>
       <div className="pb-20">
         <Pagination currentPage={parseInt(currentPage)} maxPages={parseInt(maxPages)} paginate={paginate} />

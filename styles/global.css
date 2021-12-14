@@ -2,12 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&family=Poppins:wght@100;400;500&display=swap");
+
 html {
   @apply overflow-x-hidden;
 }
 
 .post {
-  @apply mt-12 space-y-2 px-8 w-screen py-10 md:px-0 md:w-8/12 lg:w-8/12 xl:w-6/12 2xl:w-5/12;
+  @apply mt-12 space-y-2 px-8 w-screen py-10 md:px-0 md:w-8/12 lg:w-8/12 xl:w-6/12 2xl:w-5/12 font-body;
 }
 
 .post a {
@@ -19,15 +21,21 @@ html {
 }
 
 .post img {
-  @apply lg:w-8/12 lg:mx-auto;
+  @apply lg:w-8/12 md:mx-auto;
 }
 
 .post ul {
   @apply list-disc lg:text-xl pl-4;
 }
 
+.post h1,
+h2,
+h3 {
+  @apply font-display;
+}
+
 .post h1 {
-  @apply text-xl md:text-xl lg:text-4xl font-bold;
+  @apply text-xl md:text-2xl lg:text-4xl font-bold;
 }
 
 .post h2 {
