@@ -14,7 +14,7 @@ function Dangbo() {
     <div className="md:h-screen lg:h-full">
       <div className="w-full mt-16 font-medium">
         <h1 className="pt-10 w-min text-4xl mx-auto font-display text-maroon">{data.headers[0]}</h1>
-        <div className="p-4 font-body">{paragraphs}</div>
+        <div className="p-4 font-body font-light md:w-3/4 md:mx-auto">{paragraphs}</div>
       </div>
       <span className="w-screen flex justify-content">
         <img

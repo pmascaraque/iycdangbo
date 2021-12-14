@@ -16,7 +16,7 @@ function Story() {
       </div>
 
       <div className="h-screen w-full relative font-medium border-t-8 border-maroon">
-        <p className="absolute z-10 tiny:text-base sm:text-xl p-4 top-12 md:w-1/2 md:text-3xl md:top-48 md:left-12 lg:leading-normal lg:text-3xl lg:left-24 xl:top-40 lg:top-24 2xl:text-5xl 2xl:leading-normal font-body">
+        <p className="absolute z-10 tiny:text-base sm:text-xl p-4 top-12 md:w-1/2 md:text-3xl md:top-48 md:left-12 lg:leading-normal lg:text-3xl lg:left-24 xl:top-40 2xl:top-32 lg:top-24 2xl:text-5xl 2xl:leading-normal font-body">
           {data.firstText}
         </p>
         <img
