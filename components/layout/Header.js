@@ -11,16 +11,19 @@ export default function Header() {
       <button className="inline-flex items-center bg-gray-50 bg-opacity-30 justify-center p-2 rounded-md hover:text-white hover:bg-gray-200 focus:outline-none md:hidden">
         <img src={data.menuIconURL} alt="Menu" className="w-8" />
       </button>
-      <div className="hidden text-md md:inline mr-4 ">
+      <div className="hidden text-md md:flex mr-4">
         {data.buttons.map((button) => {
           return (
             <Link href={button.url}>
-              <a className="hover:bg-maroon hover:bg-opacity-60 mr-4 p-2 w-max"> {button.text}</a>
+              <a className="hover:bg-peach rounded hover:bg-opacity-50 mr-4 p-2 w-max"> {button.text}</a>
             </Link>
           );
         })}
         <Link href={data.donate.url}>
-          <a className="hover:bg-opacity-70 bg-maroon mr-4 p-2 pr-5 w-max text-white">{data.donate.text}</a>
+          <a className="rounded bg-maroon mr-4 p-2 pr-5 w-max text-peach flex justify-content items-center hover:bg-opacity-90">
+            <img src={data.donate.heart} className="h-5 pr-2" />
+            {data.donate.text}
+          </a>
         </Link>
       </div>
     </div>

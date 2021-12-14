@@ -10,5 +10,9 @@ export default {
     },
     { text: "Noticias", url: "/news" }
   ],
-  donate: { text: "❤️ Colabora", url: "/donate" }
+  donate: {
+    text: "Colabora",
+    url: "/donate",
+    heart: "https://ik.imagekit.io/manuelalferez/dangbo/heart_0ntMyyZnR.svg?updatedAt=1639470613405"
+  }
 };
