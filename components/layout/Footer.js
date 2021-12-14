@@ -21,7 +21,7 @@ export default function Footer() {
   });
 
   return (
-    <div className="py-8 bg-maroon text-white flex justify-around flex-wrap lg:text-2xl lg:px-48 2xl:px-96 2xl:text-3xl">
+    <div className="py-8 bg-maroon text-white flex justify-around flex-wrap lg:text-2xl lg:px-48 2xl:px-96 2xl:text-3xl font-display">
       {socialList}
     </div>
   );

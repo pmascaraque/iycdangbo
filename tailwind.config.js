@@ -7,6 +7,10 @@ module.exports = {
         maroon: "#582C4D",
         peach: "#ece2d0",
         redy: "#a26769"
+      },
+      fontFamily: {
+        display: ["Montserrat"],
+        body: ["Poppins"]
       }
     },
     screens: {

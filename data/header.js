@@ -10,5 +10,9 @@ export default {
     },
     { text: "Noticias", url: "/news" }
   ],
-  donate: { text: "❤️ Colabora", url: "/donate" }
+  donate: {
+    text: "Colabora",
+    url: "/donate",
+    heart: "https://ik.imagekit.io/300/0IyCDangboResources/red-heart_nE6tP10qN.svg?updatedAt=1639428718124"
+  }
 };
