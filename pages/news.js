@@ -24,7 +24,7 @@ function News({ posts }) {
     let publicationDate = new Date(posts.results[i].first_publication_date);
     postList.push(
       <div
-        className="bg-white p-4 mt-2 mx-4 rounded-xl border border-graay md:w-9/12 md:mx-auto lg:w-8/12 xl:w-7/12 hover:bg-graay"
+        className="bg-white p-4 mt-2 mx-4 rounded-xl border border-graay md:w-9/12 md:mx-auto lg:w-8/12 xl:w-7/12 hover:bg-peach hover:bg-opacity-20 cursor-pointer"
         key={posts.results[i].id}
       >
         <Link
@@ -38,7 +38,7 @@ function News({ posts }) {
           <a>
             <h1 className="text-xl mb-2 text-maroon font-bold">{posts.results[i].data.title[0].text}</h1>
             <p className="mb-8 text-xs text-maroon">{Intl.DateTimeFormat("de-DE").format(publicationDate)}</p>
-            <p className="mb-5 ">{posts.results[i].data.summary[0].text}</p>
+            <p className="mb-5 text-redy font-light">{posts.results[i].data.summary[0].text}</p>
           </a>
         </Link>
       </div>
