@@ -12,9 +12,9 @@ function Dangbo() {
 
   return (
     <div className="md:h-screen lg:h-full">
-      <div className="w-full mt-16 font-medium border-t-8 border-maroon">
-        <h1 className="pt-10 w-min text-4xl mx-auto">{data.headers[0]}</h1>
-        <div className="p-4 w-4/6">{paragraphs}</div>
+      <div className="w-full mt-16 font-medium">
+        <h1 className="pt-10 w-min text-4xl mx-auto font-display text-maroon">{data.headers[0]}</h1>
+        <div className="p-4 font-body">{paragraphs}</div>
       </div>
       <span className="w-screen flex justify-content">
         <img

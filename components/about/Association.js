@@ -13,8 +13,8 @@ function Association() {
   return (
     <div className="">
       <div className="w-full mt-16 font-medium border-t-8 border-maroon">
-        <h1 className="pt-10 w-min text-4xl mx-auto">{data.headers[1]}</h1>
-        <div className="p-4 w-4/6">{paragraphs}</div>
+        <h1 className="pt-10 w-min text-4xl mx-auto font-display text-maroon">{data.headers[1]}</h1>
+        <div className="p-4 font-body">{paragraphs}</div>
       </div>
     </div>
   );
