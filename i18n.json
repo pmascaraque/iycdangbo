@@ -1,0 +1,9 @@
+{
+  "locales": ["es", "en"],
+  "defaultLocale": "es",
+  "pages": {
+    "/": ["index", "hero", "header"],
+    "/news": ["header"],
+    "/about": ["header"]
+  }
+}
