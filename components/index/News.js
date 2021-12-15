@@ -1,8 +1,10 @@
 import React from "react";
 import Link from "next/link";
-import data from "/data/news";
+import useTranslation from "next-translate/useTranslation";
 
 export default function News({ lastPosts }) {
+  const { t } = useTranslation();
+
   let postList = [];
   lastPosts.results.map((element) => {
     let publicationDate = new Date(element.first_publication_date);
@@ -30,11 +32,11 @@ export default function News({ lastPosts }) {
   });
   return (
     <div className="border-t-8 border-maroon hover:bg-opacity-70 pb-10 flex flex-col">
-      <h1 className="pt-10 w-min text-4xl mx-auto text-maroon font-display">{data.title}</h1>
+      <h1 className="pt-10 w-min text-4xl mx-auto text-maroon font-display">{t("news-section:title")}</h1>
       <div className="pt-2 pb-10 md:flex md:justify-center md:flex-wrap md:px-12 ">{postList}</div>
       <Link href="/news">
         <a className="bg-maroon hover:bg-peach hover:text-maroon text-peach p-2 mx-auto rounded font-body">
-          Más noticias
+          {t("news-section:button")}
         </a>
       </Link>
     </div>
