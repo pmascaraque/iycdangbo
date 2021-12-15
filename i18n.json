@@ -1,9 +1,9 @@
 {
   "locales": ["es", "en"],
-  "defaultLocale": "es",
+  "defaultLocale": "en",
   "pages": {
     "/": ["index", "hero", "header", "story", "news-section"],
     "/news": ["header", "news"],
-    "/about": ["header"]
+    "/about": ["header", "about"]
   }
 }

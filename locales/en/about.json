@@ -1,0 +1,36 @@
+{
+  "dangbo": {
+    "header": "Dangbo",
+    "firstParagraph": "Dangbo is a town in southern Benin with a population of 77,000 inhabitants. The Republic of Benin is a West African state located in the Gulf of Guinea.",
+    "secondParagraph": "It is inhabited by nine million inhabitants, French-speaking, belonging to more than seven ethnic groups that share equally the beauty of the country and extreme poverty, placing it at the bottom of human development. HDI (human development index): 172nd place. The ratio of doctors per inhabitant is 0.1 per 1000 (Spain 4.9), with 0.2 beds per 1000 inhabitants (Spain 3.2). Infant mortality, malnutrition and infectious diseases are the leading cause of death."
+  },
+  "association": {
+    "header": "iycDangbo",
+    "firstParagraph": "Founded in February 2014, it was registered in the National Register of Associations of the Ministry of Interior in May 2014 and in the Register of Non-Governmental Development Organizations under No. 2833 on January 22, 2016. The Association Childhood and Surgery in Dangbo is composed of a group of Surgeons, Anesthesiologists, Gynecologists, Pediatricians and Family Doctors and Operating Room Nurses, 6th Year Medical Students, Partners and Volunteers with the aim of operating patients in the Hospital of Love Redeemer Shelter in the town of Dangbo, Ouemé region, in the Republic of Benin.",
+    "secondParagraph": "Our intention is to complement the activity of the local Sanitarians, very scarce in number given the great demand for surgery that exists in the country."
+  },
+  "sponsors": {
+    "header": "Sponsors"
+  },
+  "extra": {
+    "record": {
+      "title": "Record",
+      "id": "NIF: G87030359",
+      "inscription": "Inscripción Registro: GRUPO1, SECCIÓN 1ª",
+      "national_number": "Número nacional 605499, el 27/05/2014"
+    },
+    "contact": {
+      "title": "Contact",
+      "location": "Carlos Picabea 1 28250 Torrelodones Madrid",
+      "phone": "+34 646 11 96 98",
+      "email": "asociacioncirugiaendangbo@gmail.com"
+    },
+    "board_directors": {
+      "title": "Board of Directors",
+      "president": "President: Dr. Jorge Parise Methol",
+      "vide_president": "Vice President: Padre Martín Chognika",
+      "secretary": "Secretary: Dra. Itziar Tranche Álvarez-Cagigas",
+      "treasurer": "Treasurer: Dr. Carlos Ortiz Johansson"
+    }
+  }
+}
