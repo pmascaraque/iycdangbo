@@ -5,6 +5,7 @@
     "/": ["index", "hero", "header", "story", "news-section", "footer"],
     "/news": ["header", "news", "footer"],
     "/about": ["header", "about", "footer"],
-    "/donate": ["donate", "header", "footer"]
+    "/donate": ["donate", "header", "footer"],
+    "/thanks": ["thanks", "header", "footer"]
   }
 }
