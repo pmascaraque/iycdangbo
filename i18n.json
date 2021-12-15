@@ -2,7 +2,7 @@
   "locales": ["es", "en"],
   "defaultLocale": "es",
   "pages": {
-    "/": ["index", "hero", "header"],
+    "/": ["index", "hero", "header", "story"],
     "/news": ["header"],
     "/about": ["header"]
   }
