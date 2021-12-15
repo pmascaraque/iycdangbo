@@ -1,4 +1,3 @@
-import data from "/data/about";
 import Layout from "/components/layout/Layout";
 
 function Terms() {
@@ -9,7 +8,10 @@ function Terms() {
           <h1 className="hidden md:inline absolute top-8 right-20 text-6xl">PRIVACY</h1>
           <div className="absolute z-10 tiny:text-base sm:text-xl top-12 md:w-1/2 md:text-2xl md:top-12 lg:leading-normal lg:text-2xl lg:top-28 3xl:text-5xl 2xl:leading-normal">
             <p className="relative md:left-12 lg:left-24">
-              <meta http-equiv="refresh" content="0; url=https://www.termsfeed.com/live/6dc40f23-bd0e-43f8-b19e-c5fbc3becadd/" />
+              <meta
+                http-equiv="refresh"
+                content="0; url=https://www.termsfeed.com/live/6dc40f23-bd0e-43f8-b19e-c5fbc3becadd/"
+              />
             </p>
             <p className="relative md:left-12 lg:left-24">{data.text2}</p>
           </div>
@@ -18,13 +20,6 @@ function Terms() {
       </div>
     </Layout>
   );
-
-
-
-
-
-
-  
 }
 
 export default Terms;
