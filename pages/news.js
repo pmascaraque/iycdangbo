@@ -68,7 +68,7 @@ export const getStaticProps = async () => {
       summary: post.data.summary[0].text
     };
   });
-  console.log(posts);
+
   return {
     props: {
       posts: posts.sort((a, b) => {
