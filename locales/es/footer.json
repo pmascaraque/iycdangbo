@@ -1,0 +1,45 @@
+{
+  "contact": {
+    "title": "Contáctanos",
+    "links": {
+      "email": {
+        "text": "Correo",
+        "url": "mailto:asociacioncirugiaendangbo@gmail.com"
+      },
+      "instagram": {
+        "text": "Instagram",
+        "url": "https://www.instagram.com/cirugia_en_dangbo/"
+      },
+      "facebook": {
+        "text": "Facebook",
+        "url": "https://www.facebook.com/Asociaci%C3%B3n-Infancia-y-Cirug%C3%ADa-en-Dangbo-1414041928901454/timeline/?ref=hl"
+      }
+    }
+  },
+  "about": {
+    "title": "Conócenos",
+    "links": {
+      "about": {
+        "text": "Quiénes somos",
+        "url": "/about"
+      },
+      "privacy": {
+        "text": "Privacidad",
+        "url": "https://www.termsfeed.com/live/58a43746-7fd1-4d32-b514-f8ff2e46c3b7"
+      },
+      "terms": {
+        "text": "Términos",
+        "url": "https://www.termsfeed.com/live/6dc40f23-bd0e-43f8-b19e-c5fbc3becadd/"
+      }
+    }
+  },
+  "news": {
+    "title": "Actualidad",
+    "links": {
+      "news": {
+        "text": "Noticias",
+        "url": "/news"
+      }
+    }
+  }
+}
