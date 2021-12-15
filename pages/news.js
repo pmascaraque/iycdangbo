@@ -2,13 +2,14 @@ import React, { useState, useEffect } from "react";
 import Layout from "/components/layout/Layout";
 import { client } from "/config/prismic-configuration";
 import Prismic from "prismic-javascript";
-import data from "/data/news";
 import Link from "next/link";
 import Pagination from "../components/news/Pagination";
+import useTranslation from "next-translate/useTranslation";
 
 const POSTS_PER_PAGE = 10;
 
 function News({ posts }) {
+  const { t } = useTranslation();
   const [currentPage, setCurrentPage] = useState(0);
   const maxPages = Math.ceil(posts.results.length / POSTS_PER_PAGE);
   function paginate(pageNumber) {
@@ -47,7 +48,7 @@ function News({ posts }) {
 
   return (
     <Layout>
-      <h1 className="pt-24 w-min mx-auto text-4xl text-maroon font-display">{data.title}</h1>
+      <h1 className="pt-24 w-min mx-auto text-4xl text-maroon font-display">{t("news:title")}</h1>
       <div className="pt-2 pb-10">{postList}</div>
       <div className="pb-20">
         <Pagination currentPage={parseInt(currentPage)} maxPages={parseInt(maxPages)} paginate={paginate} />
