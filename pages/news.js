@@ -34,6 +34,7 @@ function News({ posts }) {
               id: posts[i].id
             }
           }}
+          locale={lang}
         >
           <a>
             <h1 className="text-xl mb-2 text-maroon font-bold font-display">{posts[i].title}</h1>
@@ -59,10 +60,10 @@ function News({ posts }) {
 export default News;
 
 export const getStaticProps = async (props) => {
-  console.log(props.locale);
   let lang = "";
   if (props.locale == "es") lang = "es-es";
   else lang = "en-us";
+
   const json = await client.query(Prismic.Predicates.at("document.type", "entrada"), { lang: `${lang}` });
   const posts = json.results.map((post) => {
     return {
@@ -72,7 +73,7 @@ export const getStaticProps = async (props) => {
       summary: post.data.summary[0].text
     };
   });
-  console.log(json);
+
   return {
     props: {
       posts: posts.sort((a, b) => {

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { client } from "../../config/prismic-configuration";
 import { RichText } from "prismic-reactjs";
 import Prismic from "prismic-javascript";
+import useTranslation from "next-translate/useTranslation";
 
 const Post = ({ content, title, date }) => {
   return (
@@ -21,7 +22,7 @@ const Post = ({ content, title, date }) => {
 };
 
 export const getStaticPaths = async () => {
-  const posts = await client.query(Prismic.Predicates.at("document.type", "entrada"));
+  const posts = await client.query(Prismic.Predicates.at("document.type", "entrada"), { lang: "*" });
   const pathNames = posts.results.map((post) => {
     return {
       params: {
@@ -37,16 +38,17 @@ export const getStaticPaths = async () => {
 };
 
 export const getStaticProps = async (context) => {
-  const posts = await client.query(Prismic.Predicates.at("document.type", "entrada"));
+  let lang = "";
+  if (context.locale == "es") lang = "es-es";
+  else lang = "en-us";
+  const posts = await client.query(Prismic.Predicates.at("document.type", "entrada"), { lang: `${lang}` });
 
-  const currentPost = posts.results.filter((post) => post.slugs[0] == context.params?.id)[0];
-  let publicationDate = new Date(currentPost.first_publication_date);
-  const date = Intl.DateTimeFormat("de-DE").format(publicationDate);
+  const currentPost = posts.results.filter((post) => post.slugs.includes(context.params?.id))[0];
   return {
     props: {
       content: currentPost.data.content,
       title: currentPost.data.title,
-      date: date
+      date: currentPost.data.date
     }
   };
 };
