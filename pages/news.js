@@ -9,7 +9,7 @@ import useTranslation from "next-translate/useTranslation";
 const POSTS_PER_PAGE = 10;
 
 function News({ posts }) {
-  const { t } = useTranslation();
+  const { t, lang } = useTranslation();
   const [currentPage, setCurrentPage] = useState(0);
   const maxPages = Math.ceil(posts.length / POSTS_PER_PAGE);
   function paginate(pageNumber) {
@@ -58,8 +58,12 @@ function News({ posts }) {
 
 export default News;
 
-export const getStaticProps = async () => {
-  const json = await client.query(Prismic.Predicates.at("document.type", "entrada"));
+export const getStaticProps = async (props) => {
+  console.log(props.locale);
+  let lang = "";
+  if (props.locale == "es") lang = "es-es";
+  else lang = "en-us";
+  const json = await client.query(Prismic.Predicates.at("document.type", "entrada"), { lang: `${lang}` });
   const posts = json.results.map((post) => {
     return {
       id: post.slugs[0],
@@ -68,7 +72,7 @@ export const getStaticProps = async () => {
       summary: post.data.summary[0].text
     };
   });
-
+  console.log(json);
   return {
     props: {
       posts: posts.sort((a, b) => {
