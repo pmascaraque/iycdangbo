@@ -21,18 +21,21 @@ const Post = ({ content, title, date }) => {
   );
 };
 
-export const getStaticPaths = async () => {
+export const getStaticPaths = async ({ locales }) => {
   const posts = await client.query(Prismic.Predicates.at("document.type", "entrada"), { lang: "*" });
-  const pathNames = posts.results.map((post) => {
-    return {
+
+  const path = (locale) =>
+    posts.results.map((post) => ({
       params: {
         id: post.slugs[0]
-      }
-    };
-  });
+      },
+      locale
+    }));
+
+  const paths = locales.map((locale) => path(locale)).flat();
 
   return {
-    paths: [...pathNames],
+    paths: [...paths],
     fallback: false
   };
 };
