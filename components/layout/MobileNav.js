@@ -20,7 +20,7 @@ export default function MobileNav() {
         </div>
       </button>
       {open && (
-        <div className="absolute w-screen h-screen bg-white top-0 right-20 -top-2 pl-40 flex flex-col justify-center">
+        <div className="absolute w-screen h-screen bg-white top-0 right-20 -top-2 pl-36 flex flex-col pt-32">
           <Link href={t("header:home.url")}>
             <a className="hover:bg-peach rounded hover:bg-opacity-50 mb-4 p-2 w-max"> {t("header:home.text")}</a>
           </Link>
