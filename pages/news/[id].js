@@ -1,9 +1,7 @@
 import Layout from "../../components/layout/Layout";
-import Link from "next/link";
 import { client } from "../../config/prismic-configuration";
 import { RichText } from "prismic-reactjs";
 import Prismic from "prismic-javascript";
-import useTranslation from "next-translate/useTranslation";
 
 const Post = ({ content, title, date }) => {
   return (
