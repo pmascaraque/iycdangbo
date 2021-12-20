@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 import useTranslation from "next-translate/useTranslation";
 import MobileNav from "./MobileNav";
 import NavLinks from "./NavLinks";

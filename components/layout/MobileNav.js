@@ -1,6 +1,5 @@
 import React from "react";
 import useTranslation from "next-translate/useTranslation";
-import NavLinks from "./NavLinks";
 import Link from "next/link";
 import { useState } from "react/cjs/react.development";
 
