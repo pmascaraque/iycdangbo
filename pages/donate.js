@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Layout from "/components/layout/Layout";
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
@@ -9,31 +9,19 @@ import useTranslation from "next-translate/useTranslation";
 const stripePromise = loadStripe(
   "pk_test_51JnN3zHnwRpJy9ynon9s3tID7EGhAlZzukRevAvodhXUbQTokppHJEUCOllMdzFw1o8c3044fDzUBmmlVb1tQPcb00VJ0tig1T"
 );
-//price should be *100
+
 function Donate() {
-  //NEED MYSQL DB TO STORE CLIENT SECRET
   const { t } = useTranslation();
-  const clientSecret = "pi_3K2vj2HnwRpJy9yn0hl8isXp_secret_D6uXO75Tzxr7V8Zc07yIBPKcr";
+  const [clientSecret, setClientSecret] = useState("");
 
-  // useEffect(() => {
-
-  // }, []);
-
-  const handleCustomerPortal = () => {
-    // Create PaymentIntent as soon as the page loads
-    fetch(`${process.env.NEXT_PUBLIC_SERVER_URL}/create-customer-portal-session/`, {
+  useEffect(() => {
+    fetch("http://localhost:4242/create-payment-intent", {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ clientId: "cus_KiN5p2rCu4kPU5" })
+      headers: { "Content-Type": "application/json" }
     })
       .then((res) => res.json())
-      .then((session) => {
-        console.log("session", session);
-        window.open(session.url);
-      });
-  };
-
-  //client secret visible????
+      .then((data) => setClientSecret(data.clientSecret));
+  }, []);
 
   const appearance = {
     theme: "stripe"
@@ -41,13 +29,6 @@ function Donate() {
   const options = {
     clientSecret,
     appearance
-  };
-
-  const submit = async (e) => {
-    fetch(`${process.env.NEXT_PUBLIC_SERVER_URL}/create-customer-portal-session/`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" }
-    });
   };
 
   return (

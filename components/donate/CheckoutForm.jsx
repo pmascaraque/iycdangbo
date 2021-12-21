@@ -46,7 +46,7 @@ export default function CheckoutForm() {
 
     const finalAmount = amountRef.current.value * 100;
 
-    fetch(`${process.env.NEXT_PUBLIC_SERVER_URL}/update-payment-intent/`, {
+    fetch("http://localhost:4242/update-payment-intent/", {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ finalAmount })
@@ -66,7 +66,7 @@ export default function CheckoutForm() {
       elements,
       confirmParams: {
         // Make sure to change this to your payment completion page
-        return_url: "https://localhost/thanks/"
+        return_url: "http://localhost:3000/thanks"
       }
     });
 
