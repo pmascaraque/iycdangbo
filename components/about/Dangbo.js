@@ -6,8 +6,8 @@ function Dangbo() {
   return (
     <div className="md:h-screen lg:h-full">
       <div className="w-full mt-16 font-medium">
-        <h1 className="pt-10 w-min text-4xl mx-auto font-display text-maroon">{t("about:dangbo.header")}</h1>
-        <div className="p-4 font-body font-light md:w-3/4 md:mx-auto">
+        <h1 className="pt-10 w-min text-4xl font-bold mx-auto font-display text-maroon">{t("about:dangbo.header")}</h1>
+        <div className="p-4 font-body md:w-3/4 md:mx-auto">
           <p className="mb-4 tiny:text-base sm:text-xl p-4 top-12 md:text-2xl lg:leading-normal 2xl:text-3xl 2xl:leading-normal lg:px-24">
             {t("about:dangbo.firstParagraph")}
           </p>
