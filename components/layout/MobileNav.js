@@ -1,7 +1,7 @@
 import React from "react";
 import useTranslation from "next-translate/useTranslation";
 import Link from "next/link";
-import { useState } from "react/cjs/react.development";
+import { useState } from "react";
 
 export default function MobileNav() {
   const { t } = useTranslation();

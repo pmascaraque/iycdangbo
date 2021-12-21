@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Layout from "/components/layout/Layout";
 import { client } from "/config/prismic-configuration";
 import Prismic from "prismic-javascript";
