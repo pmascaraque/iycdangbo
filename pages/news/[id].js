@@ -48,10 +48,7 @@ export const getStaticProps = async (context) => {
 
   if (!currentPost) {
     return {
-      redirect: {
-        destination: `/${context.locale}/news`,
-        permanent: false
-      }
+      notFound: true
     };
   }
 
