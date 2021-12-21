@@ -45,6 +45,16 @@ export const getStaticProps = async (context) => {
   const posts = await client.query(Prismic.Predicates.at("document.type", "entrada"), { lang: `${lang}` });
 
   const currentPost = posts.results.filter((post) => post.slugs.includes(context.params?.id))[0];
+
+  if (!currentPost) {
+    return {
+      redirect: {
+        destination: `/${context.locale}/news`,
+        permanent: false
+      }
+    };
+  }
+
   return {
     props: {
       content: currentPost.data.content,
