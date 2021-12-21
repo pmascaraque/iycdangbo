@@ -21,7 +21,7 @@ html {
 }
 
 .post img {
-  @apply lg:w-8/12 md:mx-auto;
+  @apply lg:w-8/12 mx-auto;
 }
 
 .post ul {
