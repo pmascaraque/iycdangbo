@@ -53,11 +53,10 @@ function Donate() {
   return (
     <Layout>
       <div className=" w-screen mb-10">
-        <h1 className="pt-24 w-max mx-auto text-3xl pb-8">{t("donate:header")}</h1>
-        <button onClick={handleCustomerPortal} type="button">
-          Manage billing
-        </button>
-        <div className="w-11/12 md:w-8/12 mx-auto p-2 rounded-md shadow-lg border-2 border-green-200 pb-14">
+        <h1 className="pt-24 w-max pb-10 text-2xl  md:text-4xl font-bold mx-auto font-display text-maroon">
+          {t("donate:header")}
+        </h1>
+        <div className="w-11/12 md:w-8/12 lg:w-5/12 mx-auto p-2 rounded-md shadow-xl border-4 border-maroon pb-14">
           {clientSecret ? (
             <Elements options={options} stripe={stripePromise}>
               <CheckoutForm />

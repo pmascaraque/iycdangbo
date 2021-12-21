@@ -1,7 +1,9 @@
 import React, { useEffect, useState, useRef } from "react";
 import { PaymentElement, useStripe, useElements } from "@stripe/react-stripe-js";
+import useTranslation from "next-translate/useTranslation";
 
 export default function CheckoutForm() {
+  const { t } = useTranslation();
   const stripe = useStripe();
   const elements = useElements();
   const amountRef = useRef(5);
@@ -84,9 +86,10 @@ export default function CheckoutForm() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <div className="flex justify-center m-2">
-        <p>Su importe</p>
-        <input className="ml-8 border-2 rounded" type="number" ref={amountRef}></input>
+      <div className="flex justify-center items-center m-2">
+        <p className="text-lg">{t("donate:quantity_text")}</p>
+        <input className="ml-8 border-2 rounded w-20 p-2 text-lg" type="number" ref={amountRef}></input>
+        <p className="text-lg pl-2">€</p>
       </div>
 
       <div className="p-4 flex justify-center md:px-24 lg:px-48 xl:px-60">
@@ -95,7 +98,7 @@ export default function CheckoutForm() {
       <PaymentElement id="payment-element" />
 
       <button
-        className="text-2xl bg-gray-800 hover:bg-green-300 hover:text-black text-white p-3 mt-6 flex mx-auto"
+        className="text-2xl bg-maroon hover:bg-opacity-80 text-white p-3 mt-6 flex mx-auto"
         disabled={isLoading || !stripe || !elements}
         id="submit"
       >
