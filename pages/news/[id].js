@@ -50,7 +50,7 @@ export const getStaticProps = async (context) => {
     return {
       redirect: {
         destination: `/${context.locale}/news`,
-        permanent: false
+        permanent: true
       }
     };
   }
