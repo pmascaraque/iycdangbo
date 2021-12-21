@@ -34,7 +34,7 @@ export const getStaticPaths = async ({ locales }) => {
 
   return {
     paths: [...paths],
-    fallback: true
+    fallback: false
   };
 };
 
@@ -48,10 +48,7 @@ export const getStaticProps = async (context) => {
 
   if (!currentPost) {
     return {
-      redirect: {
-        destination: `/${context.locale}/news`,
-        permanent: true
-      }
+      notFound: true
     };
   }
 
