@@ -18,8 +18,16 @@ function Index({ lastPosts }) {
 
 export default Index;
 
-export const getStaticProps = async () => {
-  const lastPosts = await client.query(Prismic.Predicates.at("document.type", "entrada"), { pageSize: 3 });
+export const getStaticProps = async (props) => {
+  let lang = "";
+  if (props.locale == "es") lang = "es-es";
+  else lang = "en-us";
+
+  const lastPosts = await client.query(Prismic.Predicates.at("document.type", "entrada"), {
+    lang: `${lang}`,
+    pageSize: 3
+  });
+
   return {
     props: {
       lastPosts
