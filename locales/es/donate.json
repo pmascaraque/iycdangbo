@@ -1,4 +1,5 @@
 {
   "header": "Información de pago",
-  "quantity_text": "Su importe: "
+  "quantity_text": "Su importe: ",
+  "note": "los primeros 150 euros de ingreso como donacion desgravan el 80%, y a partir de 150 desgraban el 35%"
 }

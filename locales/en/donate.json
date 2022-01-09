@@ -1,4 +1,5 @@
 {
   "header": "Payment information",
-  "quantity_text": "Amount: "
+  "quantity_text": "Amount: ",
+  "note": "The first 150 euros of income as a donation is tax deductible at 80%, and from 150, it is taxed instead at 35%"
 }
