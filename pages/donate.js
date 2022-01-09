@@ -44,7 +44,8 @@ function Donate() {
             </Elements>
           ) : (
             <Loading />
-          )}
+          )}{" "}
+          <p className="m-7">{t("donate:note")}</p>
         </div>
       </div>
     </Layout>
