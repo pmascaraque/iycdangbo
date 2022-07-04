@@ -61,5 +61,7 @@ Organization: asociacioncirugiaendangbo@gmail.com
 
 [Development Team](https://github.com/pmascaraque/iycdangbo/discussions)
 
+Pending refactoring and typescript migration
+
 
 
