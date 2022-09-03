@@ -1,9 +1,3 @@
-<p align="center">
-  <img src="https://infanciaycirugiaendangbo.org/wp-content/uploads/2015/10/dangbo_logo.png" alt="Logo" width="240">
-</p>
-
-
-
   <h3 align="center">Infancia y cirujia en Dangbo</h3>
 
   <p align="center">
