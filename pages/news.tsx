@@ -51,7 +51,7 @@ function News({ posts }) {
       <h1 className="pt-24 w-min mx-auto text-4xl text-maroon font-display">{t("news:title")}</h1>
       <div className="pt-2 pb-10">{postList}</div>
       <div className="pb-20">
-        <Pagination currentPage={parseInt(currentPage)} maxPages={parseInt(maxPages)} paginate={paginate} />
+        <Pagination currentPage={currentPage} maxPages={maxPages} paginate={paginate} />
       </div>
     </Layout>
   );
