@@ -1,4 +1,4 @@
-import sponsors from "/data/sponsors";
+import sponsors from "../../data/sponsors";
 import React from "react";
 import useTranslation from "next-translate/useTranslation";
 

@@ -1,4 +1,10 @@
-function Pagination({ currentPage, maxPages, paginate }) {
+type Props = {
+  currentPage: number;
+  maxPages: number;
+  paginate: (number) => void;
+} 
+
+function Pagination({ currentPage, maxPages, paginate }: Props) {
   let pagesEnum = [];
   if (maxPages > 1) {
     pagesEnum.push(
@@ -18,7 +24,7 @@ function Pagination({ currentPage, maxPages, paginate }) {
             currentPage == i ? "text-peach bg-maroon" : "text-maroon bg-maroon bg-opacity-20"
           }`}
           key={i}
-          id={i}
+          id={i.toString()}
           onClick={() => paginate(i)}
         >
           {i}

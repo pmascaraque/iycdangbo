@@ -26,6 +26,7 @@
     "swiper": "^6.7.0"
   },
   "devDependencies": {
+    "@types/react": "18.0.01",
     "autoprefixer": "^10.3.7",
     "postcss": "^8.3.9",
     "tailwindcss": "^2.2.16",
